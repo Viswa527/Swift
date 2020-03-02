@@ -27,7 +27,7 @@ func insertionSort(_ array:Array<Int>) -> [Int]         // Insertion sort functi
     return arrSort                                      // returning the Array
 }
 var sortedArray = insertionSort(unSortedArray)          // collecting the Array which is returned by the insertionSort function
-for i in sortedArray
+for i in 0...sortedArray.count-1
 {
-    print(i,terminator:" ")
+    print(sortedArray[i],terminator:" ")
 }
