@@ -10,7 +10,7 @@ import Foundation
 var Number = 1000
 func isPrime(_ number:Int) ->Bool
 {
-    if number > 3
+    if number > 3 && number > -1
     {
         for i in 2...number-1
         {
