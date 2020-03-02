@@ -8,9 +8,9 @@
 
 import Foundation
 var Number = 1000
-func isPrime(_ number:Int) ->Bool
+func isPrime(_ number:Int) ->Bool   // function to  find a prime  number or not
 {
-    if number > 3 && number > -1
+    if number > 3 && number > -1    // condition
     {
         for i in 2...number-1
         {
@@ -26,10 +26,10 @@ func isPrime(_ number:Int) ->Bool
         return true
     }
 }
-for i in 0...Number
+for i in 0...Number     // looping to all numbers
 {
-    if isPrime(i)
+    if isPrime(i)       // checking prime or not through the isPrime() function
     {
-        print(i)
+        print(i)        // prints PRIME numbers
     }
 }
