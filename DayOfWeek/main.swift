@@ -12,7 +12,6 @@ var day =  2
 var month = 3
 var year = 2020
 year = year-(14-month)/12
-var x = year+(year/4)+(year/400)-(year/100)
 month = month + 12 * ((14-month)/12) - 2
-day = (day+x+(31*month)/12) % 7
+day = (day+(year+(year/4)+(year/400)-(year/100))+(31*month)/12) % 7
 print(name[day])
