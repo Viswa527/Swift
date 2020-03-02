@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		848F7D83240CC22500759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D82240CC22500759E57 /* main.swift */; };
+		848F7D90240CC8AC00759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D8F240CC8AC00759E57 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		848F7D7D240CC22500759E57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		848F7D8B240CC8AC00759E57 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		848F7D7F240CC22500759E57 /* BridgeLabzPrograms */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = BridgeLabzPrograms; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F7D82240CC22500759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		848F7D8D240CC8AC00759E57 /* Prime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prime; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F7D8F240CC8AC00759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		848F7D7C240CC22500759E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F7D8A240CC8AC00759E57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				848F7D81240CC22500759E57 /* Anagram */,
+				848F7D8E240CC8AC00759E57 /* Prime */,
 				848F7D80240CC22500759E57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				848F7D7F240CC22500759E57 /* BridgeLabzPrograms */,
+				848F7D8D240CC8AC00759E57 /* Prime */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				848F7D82240CC22500759E57 /* main.swift */,
 			);
 			path = Anagram;
+			sourceTree = "<group>";
+		};
+		848F7D8E240CC8AC00759E57 /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				848F7D8F240CC8AC00759E57 /* main.swift */,
+			);
+			path = Prime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 848F7D7F240CC22500759E57 /* BridgeLabzPrograms */;
 			productType = "com.apple.product-type.tool";
 		};
+		848F7D8C240CC8AC00759E57 /* Prime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F7D93240CC8AC00759E57 /* Build configuration list for PBXNativeTarget "Prime" */;
+			buildPhases = (
+				848F7D89240CC8AC00759E57 /* Sources */,
+				848F7D8A240CC8AC00759E57 /* Frameworks */,
+				848F7D8B240CC8AC00759E57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prime;
+			productName = Prime;
+			productReference = 848F7D8D240CC8AC00759E57 /* Prime */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +139,9 @@
 				ORGANIZATIONNAME = admin;
 				TargetAttributes = {
 					848F7D7E240CC22500759E57 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					848F7D8C240CC8AC00759E57 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -111,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				848F7D7E240CC22500759E57 /* BridgeLabzPrograms */,
+				848F7D8C240CC8AC00759E57 /* Prime */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				848F7D83240CC22500759E57 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F7D89240CC8AC00759E57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F7D90240CC8AC00759E57 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +316,24 @@
 			};
 			name = Release;
 		};
+		848F7D91240CC8AC00759E57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		848F7D92240CC8AC00759E57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +351,15 @@
 			buildConfigurations = (
 				848F7D87240CC22500759E57 /* Debug */,
 				848F7D88240CC22500759E57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848F7D93240CC8AC00759E57 /* Build configuration list for PBXNativeTarget "Prime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F7D91240CC8AC00759E57 /* Debug */,
+				848F7D92240CC8AC00759E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
