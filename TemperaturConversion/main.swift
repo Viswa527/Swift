@@ -22,7 +22,7 @@ func fahrenheit(_ value:Double) -> Double
 
 if charact == "c" || charact == "C"
 {
-    print("Enter the value in Farhen")
+    print("Enter the value in Farhen",terminator:" ")
     print(celsisus(Double(readLine()!)!))
 }
 else
