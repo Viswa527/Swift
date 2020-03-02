@@ -13,6 +13,7 @@
 		848F7DA6240CDAE200759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7DA5240CDAE200759E57 /* main.swift */; };
 		848F7DB1240CE3AA00759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7DB0240CE3AA00759E57 /* main.swift */; };
 		848F7DBC240CEDBB00759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7DBB240CEDBB00759E57 /* main.swift */; };
+		848F7DC7240D06C200759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7DC6240D06C200759E57 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		848F7DC2240D06C200759E57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +95,8 @@
 		848F7DB0240CE3AA00759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		848F7DB9240CEDBB00759E57 /* MergeSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MergeSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F7DBB240CEDBB00759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		848F7DC4240D06C200759E57 /* Vending Machine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Vending Machine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F7DC6240D06C200759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		848F7DC1240D06C200759E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,6 +161,7 @@
 				848F7DA4240CDAE200759E57 /* InsertionSort */,
 				848F7DAF240CE3AA00759E57 /* BubbleSort */,
 				848F7DBA240CEDBB00759E57 /* MergeSort */,
+				848F7DC5240D06C200759E57 /* Vending Machine */,
 				848F7D80240CC22500759E57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +175,7 @@
 				848F7DA3240CDAE200759E57 /* InsertionSort */,
 				848F7DAE240CE3AA00759E57 /* BubbleSort */,
 				848F7DB9240CEDBB00759E57 /* MergeSort */,
+				848F7DC4240D06C200759E57 /* Vending Machine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +226,14 @@
 				848F7DBB240CEDBB00759E57 /* main.swift */,
 			);
 			path = MergeSort;
+			sourceTree = "<group>";
+		};
+		848F7DC5240D06C200759E57 /* Vending Machine */ = {
+			isa = PBXGroup;
+			children = (
+				848F7DC6240D06C200759E57 /* main.swift */,
+			);
+			path = "Vending Machine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +341,23 @@
 			productReference = 848F7DB9240CEDBB00759E57 /* MergeSort */;
 			productType = "com.apple.product-type.tool";
 		};
+		848F7DC3240D06C200759E57 /* Vending Machine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F7DC8240D06C200759E57 /* Build configuration list for PBXNativeTarget "Vending Machine" */;
+			buildPhases = (
+				848F7DC0240D06C200759E57 /* Sources */,
+				848F7DC1240D06C200759E57 /* Frameworks */,
+				848F7DC2240D06C200759E57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vending Machine";
+			productName = "Vending Machine";
+			productReference = 848F7DC4240D06C200759E57 /* Vending Machine */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -340,6 +386,9 @@
 					848F7DB8240CEDBB00759E57 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					848F7DC3240D06C200759E57 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 848F7D7A240CC22500759E57 /* Build configuration list for PBXProject "BridgeLabzPrograms" */;
@@ -361,6 +410,7 @@
 				848F7DA2240CDAE200759E57 /* InsertionSort */,
 				848F7DAD240CE3AA00759E57 /* BubbleSort */,
 				848F7DB8240CEDBB00759E57 /* MergeSort */,
+				848F7DC3240D06C200759E57 /* Vending Machine */,
 			);
 		};
 /* End PBXProject section */
@@ -411,6 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				848F7DBC240CEDBB00759E57 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F7DC0240D06C200759E57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F7DC7240D06C200759E57 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +696,24 @@
 			};
 			name = Release;
 		};
+		848F7DC9240D06C200759E57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		848F7DCA240D06C200759E57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +776,15 @@
 			buildConfigurations = (
 				848F7DBE240CEDBB00759E57 /* Debug */,
 				848F7DBF240CEDBB00759E57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848F7DC8240D06C200759E57 /* Build configuration list for PBXNativeTarget "Vending Machine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F7DC9240D06C200759E57 /* Debug */,
+				848F7DCA240D06C200759E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
