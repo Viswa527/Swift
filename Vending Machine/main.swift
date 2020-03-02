@@ -14,9 +14,9 @@ while amount != 0
 {
     if amount/notes[i] != 0
     {
-        let noNotes = amount/notes[i]
-        let debited= notes[i]*noNotes
-        amount = amount-debited
+        let noNotes = amount/notes[i]           // to show how many notes required to get
+        let debited = notes[i]*noNotes          // amount that debits everytime u find notes
+        amount = amount-debited                 // amount should be updated every time when u debit the money
         print("\(notes[i]) * \(noNotes) = \(debited)")
     }
     i=i+1
