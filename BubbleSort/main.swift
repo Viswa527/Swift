@@ -7,12 +7,13 @@
 //
 
 import Foundation
-var unsortedArray = [8,27,2,5,7,48,1,10,15,3,4,6,9,0]
-func bubbleSort(_ array:Array<Int>) -> [Int]
+var unsortedArray = [8,27,2,5,7,48,1,10,15,3,4,6,9,0]   // targeted array
+
+func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble sort which returns sorted array
 {
     var arrSort:Array<Int> = array
     let len=arrSort.count
-    for _ in 0...len-1
+    for _ in 0...len-2
     {
         for j in 0...len-2
         {
@@ -26,6 +27,7 @@ func bubbleSort(_ array:Array<Int>) -> [Int]
     }
     return arrSort
 }
+
 var sortedArray = bubbleSort(unsortedArray)
 for i in sortedArray
 {
