@@ -8,7 +8,7 @@
 
 import Foundation
 
-var number:Double = 4
+var number:Double = Double(readLine()!)!
 func squareRo(_ number:Double) -> Double
 {
     let result:Double = number.squareRoot()
