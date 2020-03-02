@@ -8,9 +8,10 @@
 
 import Foundation
 
-var principal:Double = 1000
-var year:Double = 10
-var rate:Double = 2
+var principal:Double = Double(readLine()!)!
+var year:Double = Double(readLine()!)!
+var rate:Double = Double(readLine()!)!
+
 func paymentMonthly(_ principal:Double,_ year:Double,_ rate:Double) -> Double
 {
     let n:Double = 12 * year
