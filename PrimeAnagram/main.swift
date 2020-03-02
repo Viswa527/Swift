@@ -7,8 +7,8 @@
 //
 
 import Foundation
-var number = 300
-func isPrime(_ number:Int) ->Bool
+var number = 1000                           // user input
+func isPrime(_ number:Int) ->Bool           // function to check prime number or not and returns Boolean value (true or False)
 {
     if number > 3 && number > -1
     {
@@ -26,11 +26,11 @@ func isPrime(_ number:Int) ->Bool
         return true
     }
 }
-func reverse(_ number:Int) -> Int
+func reverse(_ number:Int) -> Int           // function to convert the number to reverse and returns the reversed number
 {
     var value = 0
     var num=number
-    while (num != 0)
+    while (num != 0)                        // Reverse mechanisam
     {
         value = value * 10
         value = value + num % 10
@@ -38,7 +38,7 @@ func reverse(_ number:Int) -> Int
     }
     return value
 }
-func isAnagram(_ number:Int) -> Bool
+func isAnagram(_ number:Int) -> Bool        // function to check the number is Anagram or not return Boolean value
 {
     if number == reverse(number)
     {
@@ -51,7 +51,7 @@ func isAnagram(_ number:Int) -> Bool
 }
 for i in 0...number
 {
-    if isPrime(i) && isAnagram(i)
+    if isPrime(i) && isAnagram(i)           // checks Anagram and Prime then only prints value
     {
         print(i)
     }
