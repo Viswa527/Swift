@@ -8,11 +8,11 @@
 
 import Foundation
 
-var number:Double = Double(readLine()!)!
+var number:Double = Double(readLine()!)!                // reading input from the user ads of DOUBLE type
 
-func squareRo(_ number:Double) -> Double
+func squareRo(_ number:Double) -> Double                // accepts only double type of data
 {
-    let result:Double = number.squareRoot()
+    let result:Double = number.squareRoot()             // squareRoot() gives outpur in double type
     return result
 }
 
