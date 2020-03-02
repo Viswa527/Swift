@@ -17,9 +17,9 @@ func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble so
     {
         for j in 0...len-2
         {
-            if arrSort[j+1] < arrSort[j]
+            if arrSort[j+1] < arrSort[j]                    //logic for bubble sort
             {
-                let temp = arrSort[j+1]
+                let temp = arrSort[j+1]                     // swapping values in Array
                 arrSort[j+1] = arrSort[j]
                 arrSort[j] = temp
             }
@@ -28,7 +28,8 @@ func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble so
     return arrSort
 }
 
-var sortedArray = bubbleSort(unsortedArray)
+var sortedArray = bubbleSort(unsortedArray)               
+
 for i in sortedArray
 {
     print(i,terminator:" ")
