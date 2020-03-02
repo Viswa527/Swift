@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+import Foundation
 var name=["Sunday","Monday","Tuesday","Wenesday","Thursday","Friday","Saturday"]
 var day =  2
 var month = 3

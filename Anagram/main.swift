@@ -6,8 +6,8 @@
 //  Copyright © 2020 admin. All rights reserved.
 
 import Foundation
-var str = "heart"
-var str1 = "earth"
+var str = readLine()!
+var str1 = readLine()!
 
 str = str.replacingOccurrences(of: " ", with: "")               //to delete spaces or replaceing all spaces in String
 str1 = str1.replacingOccurrences(of: " ", with: "")
