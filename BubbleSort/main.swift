@@ -7,7 +7,15 @@
 //
 
 import Foundation
-var unsortedArray = [8,27,2,5,7,48,1,10,15,3,4,6,9,0]   // targeted array
+print("Enter length of Array : ",terminator:" ")
+var numberOfElements = Int(readLine()!)!
+var unsortedArray:Array<Int> = []
+
+for _ in 0...numberOfElements-1                         // reading the inputs from the user inserts the values in the Array
+{
+    let x = Int(readLine()!)!
+    unsortedArray.append(x)
+}
 
 func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble sort which returns sorted array
 {
@@ -28,9 +36,10 @@ func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble so
     return arrSort
 }
 
-var sortedArray = bubbleSort(unsortedArray)               
+var sortedArray = bubbleSort(unsortedArray)
 
 for i in sortedArray
 {
     print(i,terminator:" ")
 }
+
