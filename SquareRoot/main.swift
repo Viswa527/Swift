@@ -9,9 +9,11 @@
 import Foundation
 
 var number:Double = Double(readLine()!)!
+
 func squareRo(_ number:Double) -> Double
 {
     let result:Double = number.squareRoot()
     return result
 }
+
 print(squareRo(number))
