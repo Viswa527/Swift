@@ -12,27 +12,25 @@ print("Enter c or C for Celsius and f or F for Fahrenheit  : ",terminator:" ")
 var charact = readLine()!
 func celsisus(_ values:Double) -> Double
 {
-    let x:Double = values * (9/5) + 32
-    return x
+    return values * (9/5) + 32
 }
 func fahrenheit(_ value:Double) -> Double
 {
-    let y:Double = value - 32 * (5/9)
-    return y
+    return value - 32 * (5/9)
 }
+
+
 if charact == "c" || charact == "C"
 {
     print("Enter the value in Farhen")
-    let x:Double = Double(readLine()!)!
-    print(celsisus(x))
+    print(celsisus(Double(readLine()!)!))
 }
 else
 {
     if charact == "f" || charact == "F"
     {
         print("Enter the value in celsisus :",terminator:" ")
-        let y:Double = Double(readLine()!)!
-        print(fahrenheit(y))
+        print(fahrenheit(Double(readLine()!)!))
     }
     else
     {
