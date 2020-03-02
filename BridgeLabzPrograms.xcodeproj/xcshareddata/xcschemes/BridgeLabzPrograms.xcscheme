@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "848F7D7E240CC22500759E57"
-               BuildableName = "BridgeLabzPrograms"
-               BlueprintName = "BridgeLabzPrograms"
+               BuildableName = "Anagram"
+               BlueprintName = "Anagram"
                ReferencedContainer = "container:BridgeLabzPrograms.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848F7D7E240CC22500759E57"
-            BuildableName = "BridgeLabzPrograms"
-            BlueprintName = "BridgeLabzPrograms"
+            BuildableName = "Anagram"
+            BlueprintName = "Anagram"
             ReferencedContainer = "container:BridgeLabzPrograms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848F7D7E240CC22500759E57"
-            BuildableName = "BridgeLabzPrograms"
-            BlueprintName = "BridgeLabzPrograms"
+            BuildableName = "Anagram"
+            BlueprintName = "Anagram"
             ReferencedContainer = "container:BridgeLabzPrograms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

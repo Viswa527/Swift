@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		848F7D7F240CC22500759E57 /* BridgeLabzPrograms */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = BridgeLabzPrograms; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F7D7F240CC22500759E57 /* Anagram */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Anagram; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F7D82240CC22500759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		848F7D8D240CC8AC00759E57 /* Prime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prime; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F7D8F240CC8AC00759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		848F7D80240CC22500759E57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				848F7D7F240CC22500759E57 /* BridgeLabzPrograms */,
+				848F7D7F240CC22500759E57 /* Anagram */,
 				848F7D8D240CC8AC00759E57 /* Prime */,
 			);
 			name = Products;
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		848F7D7E240CC22500759E57 /* BridgeLabzPrograms */ = {
+		848F7D7E240CC22500759E57 /* Anagram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 848F7D86240CC22500759E57 /* Build configuration list for PBXNativeTarget "BridgeLabzPrograms" */;
+			buildConfigurationList = 848F7D86240CC22500759E57 /* Build configuration list for PBXNativeTarget "Anagram" */;
 			buildPhases = (
 				848F7D7B240CC22500759E57 /* Sources */,
 				848F7D7C240CC22500759E57 /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = BridgeLabzPrograms;
+			name = Anagram;
 			productName = BridgeLabzPrograms;
-			productReference = 848F7D7F240CC22500759E57 /* BridgeLabzPrograms */;
+			productReference = 848F7D7F240CC22500759E57 /* Anagram */;
 			productType = "com.apple.product-type.tool";
 		};
 		848F7D8C240CC8AC00759E57 /* Prime */ = {
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				848F7D7E240CC22500759E57 /* BridgeLabzPrograms */,
+				848F7D7E240CC22500759E57 /* Anagram */,
 				848F7D8C240CC8AC00759E57 /* Prime */,
 			);
 		};
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		848F7D86240CC22500759E57 /* Build configuration list for PBXNativeTarget "BridgeLabzPrograms" */ = {
+		848F7D86240CC22500759E57 /* Build configuration list for PBXNativeTarget "Anagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				848F7D87240CC22500759E57 /* Debug */,
