@@ -8,11 +8,11 @@
 
 import Foundation
 
-var ar = [6,8,3,5,2,1,9,4,7,0]
-func insertionSort(_ arr:Array<Int>) -> [Int]
+var unSortedArray = [6,8,3,12,5,14,2,44,1,9,4,7,0]
+func insertionSort(_ array:Array<Int>) -> [Int]
 {
-    var arrSort = arr
-    for i in 1...arr.count-1
+    var arrSort = array
+    for i in 1...array.count-1
     {
         let preV = arrSort[i]
         var index = i-1
@@ -26,8 +26,8 @@ func insertionSort(_ arr:Array<Int>) -> [Int]
     }
     return arrSort
 }
-var sorted = insertionSort(ar)
-for i in sorted
+var sortedArray = insertionSort(unSortedArray)
+for i in sortedArray
 {
     print(i,terminator:" ")
 }
