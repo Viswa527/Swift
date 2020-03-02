@@ -8,16 +8,16 @@
 
 import Foundation
 
-var principal:Double = Double(readLine()!)!
-var year:Double = Double(readLine()!)!
-var rate:Double = Double(readLine()!)!
+var principal:Double = Double(readLine()!)!                                     // reading the value of Principal
+var year:Double = Double(readLine()!)!                                          // reading the value of year
+var rate:Double = Double(readLine()!)!                                          // reading the value of rate of interest
 
-func paymentMonthly(_ principal:Double,_ year:Double,_ rate:Double) -> Double
+func paymentMonthly(_ principal:Double,_ year:Double,_ rate:Double) -> Double   // function to calculate the paymentMonthly
 {
     let n:Double = 12 * year
     let r:Double = principal * Double(rate)/(1200)
     let denomi:Double = 1 - pow(Double(1+r),Double(-n))
     let result:Double = r/denomi
-    return result
+    return result                                                                // result will be returned
 }
 print(paymentMonthly(principal,year,rate))
