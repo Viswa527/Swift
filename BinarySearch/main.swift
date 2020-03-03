@@ -8,25 +8,25 @@
 
 import Foundation
 
-var str = "hello world how are you what omg is going on wha"
-var find = "hello"
+var string = readLine()!
+var find = readLine()!
 var strArr:Array<String> = []
-var t = ""
-for i in str
+var temp = ""
+for i in string
 {
     if i == " "
     {
-        strArr.append(t)
-        t = ""
+        strArr.append(temp)
+        temp = ""
     }
     else
     {
-        t.append(i)
+        temp.append(i)
     }
 }
-strArr.append(t)
+strArr.append(temp)
 strArr = strArr.sorted()
-func binarySearch(_ numbers: [String],_ value: String) -> Int
+func binarySearch(_ numbers: [String],_ value: String) -> Any
 {
     var left = 0
     var right = numbers.count - 1
@@ -51,8 +51,7 @@ func binarySearch(_ numbers: [String],_ value: String) -> Int
             }
         }
     }
-    return 0
+    return "Not found"
 }
-var newChanges = binarySearch(strArr,find)
-print(newChanges)
-print(strArr)
+var foundAtIndex = binarySearch(strArr,find)
+print(foundAtIndex)
