@@ -9,23 +9,29 @@
 import Foundation
 
 var number = Int(readLine()!)!
-var str = ""
-while number != 0
+func toBinary(_ number:Int) -> String
 {
-   let temp = number%2
-    str = String(temp)+str
-    number = number/2
+    var str = ""
+    var numberI = number
+    while numberI != 0
+    {
+        let temp = numberI%2
+        str = String(temp)+str
+        numberI = numberI/2
+    }
+    return str
 }
-if str.count >= 4 && str.count % 4 == 0
+var binaryString = toBinary(number)
+if binaryString.count >= 4 && binaryString.count % 4 == 0
 {
-    print(str)
+    print(binaryString)
 }
 else
 {
-    let pad = 4 - str.count % 4
+    let pad = 4 - binaryString.count % 4
     for _ in 0...pad-1
     {
-        str = "0"+str
+        binaryString = "0"+binaryString
     }
-    print(str)
+    print(binaryString)
 }
