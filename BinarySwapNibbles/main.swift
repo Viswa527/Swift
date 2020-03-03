@@ -8,7 +8,7 @@
 
 import Foundation
 
-var number = 245
+var number = Int(readLine()!)!
 var binaryString = Binary.toBinary(number)
 
 if binaryString.count % 8 != 0

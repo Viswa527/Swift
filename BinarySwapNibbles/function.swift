@@ -10,20 +10,20 @@ import Foundation
 
 public class convert
 {
-    public static func toValue(_ sr:String) -> Int
+    public static func toValue(_ sr:String) -> Int      // Accepts binary as String
     {
         let str = sr
         var val:Int = 0
         var last = str.count-1
         for i in str
         {
-            let x = Int(pow(2.0, Double(last)))
+            let x = Int(pow(2.0, Double(last))) //power of 2
             if  i == "1"
             {
                 val = val + (x * 1)
             }
             last = last - 1
         }
-        return val
+        return val                                         // return the value of binary
     }
 }
