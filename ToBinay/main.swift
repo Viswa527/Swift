@@ -8,7 +8,7 @@
 
 import Foundation
 
-var number = 28
+var number = 265
 var str = ""
 while number != 0
 {
