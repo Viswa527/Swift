@@ -8,11 +8,13 @@
 
 import Foundation
 
-var string = readLine()!
-var find = readLine()!
-var strArr:Array<String> = []
-var temp = ""
-for i in string
+var string = readLine()!                    // user inputstring
+var find = readLine()!                      // string that should be find in the string
+var strArr:Array<String> = []               //intialization of empty Array of type String
+var temp = ""                               // empty string
+
+
+convert:for i in string                     // converting string to array as Split function by seperating by space
 {
     if i == " "
     {
@@ -24,9 +26,12 @@ for i in string
         temp.append(i)
     }
 }
-strArr.append(temp)
-strArr = strArr.sorted()
-func binarySearch(_ numbers: [String],_ value: String) -> Any
+
+strArr.append(temp)                         // from above :convert we need to add last element in to array so we apppend to it
+strArr = strArr.sorted()                    // sorting the array
+
+
+func binarySearch(_ numbers: [String],_ value: String) -> Any  // function to search an string and returns index value or string
 {
     var left = 0
     var right = numbers.count - 1
@@ -53,5 +58,6 @@ func binarySearch(_ numbers: [String],_ value: String) -> Any
     }
     return "Not found"
 }
-var foundAtIndex = binarySearch(strArr,find)
-print(foundAtIndex)
+
+var foundAtIndex = binarySearch(strArr,find)        // calling a binarySearch function which returns Int(index) or String(not found)
+print(foundAtIndex)     
