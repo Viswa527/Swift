@@ -24,7 +24,7 @@ loop:if str1Array.count == strArray.count                  // nameing the condii
     {
         if str1Array[i] != strArray[i]
         {
-            print("Not a Anagram")
+            print("Not a Anagram ")
             break loop                                     // to exit the loop to end of "loop"
         }
     }
