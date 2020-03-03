@@ -8,7 +8,7 @@
 
 import Foundation
 
-var number = 265
+var number = Int(readLine()!)!
 var str = ""
 while number != 0
 {
