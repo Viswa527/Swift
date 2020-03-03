@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import 
 
 var number = Int(readLine()!)!                                  // to take input from the user
 func toBinary(_ number:Int) -> String                           // function to convert int -> Binary (String format)
