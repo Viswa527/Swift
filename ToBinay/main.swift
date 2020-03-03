@@ -8,8 +8,8 @@
 
 import Foundation
 
-var number = Int(readLine()!)!
-func toBinary(_ number:Int) -> String
+var number = Int(readLine()!)!                                  // to take input from the user
+func toBinary(_ number:Int) -> String                           // function to convert int -> Binary (String format)
 {
     var str = ""
     var numberI = number
@@ -22,13 +22,13 @@ func toBinary(_ number:Int) -> String
     return str
 }
 var binaryString = toBinary(number)
-if binaryString.count >= 4 && binaryString.count % 4 == 0
+if binaryString.count >= 4 && binaryString.count % 4 == 0           // checking the string bust be in length 4
 {
     print(binaryString)
 }
 else
 {
-    let pad = 4 - binaryString.count % 4
+    let pad = 4 - binaryString.count % 4                            // string should be in 4 bit format
     for _ in 0...pad-1
     {
         binaryString = "0"+binaryString
