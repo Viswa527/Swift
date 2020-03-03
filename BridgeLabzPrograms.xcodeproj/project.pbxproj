@@ -21,6 +21,9 @@
 		848F7DFE240D44C600759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7DFD240D44C600759E57 /* main.swift */; };
 		84D95743240E196C001EAC67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95742240E196C001EAC67 /* main.swift */; };
 		84D9574E240E40BA001EAC67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9574D240E40BA001EAC67 /* main.swift */; };
+		84D95755240E5F79001EAC67 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95754240E5F79001EAC67 /* Binary.swift */; };
+		84D95756240E5FC2001EAC67 /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95754240E5F79001EAC67 /* Binary.swift */; };
+		84D95758240E6358001EAC67 /* function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95757240E6358001EAC67 /* function.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -181,6 +184,8 @@
 		84D95742240E196C001EAC67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84D9574B240E40BA001EAC67 /* BinarySwapNibbles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySwapNibbles; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9574D240E40BA001EAC67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		84D95754240E5F79001EAC67 /* Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary.swift; sourceTree = "<group>"; };
+		84D95757240E6358001EAC67 /* function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = function.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				848F7DFD240D44C600759E57 /* main.swift */,
+				84D95754240E5F79001EAC67 /* Binary.swift */,
 			);
 			path = ToBinay;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				84D9574D240E40BA001EAC67 /* main.swift */,
+				84D95757240E6358001EAC67 /* function.swift */,
 			);
 			path = BinarySwapNibbles;
 			sourceTree = "<group>";
@@ -858,6 +865,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D95755240E5F79001EAC67 /* Binary.swift in Sources */,
 				848F7DFE240D44C600759E57 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,7 +882,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D95756240E5FC2001EAC67 /* Binary.swift in Sources */,
 				84D9574E240E40BA001EAC67 /* main.swift in Sources */,
+				84D95758240E6358001EAC67 /* function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
