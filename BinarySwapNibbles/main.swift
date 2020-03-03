@@ -7,6 +7,5 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
+var number = 14
+print(toBinary(number))

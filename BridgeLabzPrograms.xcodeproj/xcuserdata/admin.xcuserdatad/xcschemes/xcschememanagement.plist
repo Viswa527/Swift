@@ -7,7 +7,12 @@
 		<key>BinarySearch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>10</integer>
+		</dict>
+		<key>BinarySwapNibbles.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 		<key>BridgeLabzPrograms.xcscheme_^#shared#^_</key>
 		<dict>
@@ -52,7 +57,7 @@
 		<key>SquareRoot.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>11</integer>
 		</dict>
 		<key>TemperaturConversion.xcscheme_^#shared#^_</key>
 		<dict>
@@ -62,7 +67,7 @@
 		<key>ToBinay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>12</integer>
 		</dict>
 		<key>Vending Machine.xcscheme_^#shared#^_</key>
 		<dict>
