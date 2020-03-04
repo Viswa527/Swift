@@ -9,7 +9,7 @@
 import Foundation
 public Merge
 {
-    public static func sortMerge(_ array:Array<Int>) -> [Int]
+    public static func mergeSort(_ array:Array<Int>) -> [Int]
     {
         if array.count == 1
         {
@@ -19,8 +19,8 @@ public Merge
         {
             let len = array.count/2
             let co = array.count
-            let arr = sortMerge(Array(array[0..<len]))
-            let brr = sortMerge(Array(array[len..<co]))
+            let arr = mergeSort(Array(array[0..<len]))
+            let brr = mergeSort(Array(array[len..<co]))
             var crr:[Int] = []
             var a = 0
             var b = 0
