@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public Merge
+public class Merge
 {
     public static func mergeSort(_ array:Array<Int>) -> [Int]
     {

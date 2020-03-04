@@ -17,6 +17,7 @@
 		845F0CD1240F89FF00FAE2FE /* PrimeAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95768240E759E001EAC67 /* PrimeAnagram.swift */; };
 		845F0CD2240F8A0D00FAE2FE /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CC6240F878400FAE2FE /* Insertion.swift */; };
 		845F0CD3240F8A1F00FAE2FE /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CC8240F883700FAE2FE /* Bubble.swift */; };
+		845F0CD4240F910800FAE2FE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CCA240F888000FAE2FE /* MergeSort.swift */; };
 		848F7D83240CC22500759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D82240CC22500759E57 /* main.swift */; };
 		848F7D90240CC8AC00759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D8F240CC8AC00759E57 /* main.swift */; };
 		848F7D9B240CCC0400759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D9A240CCC0400759E57 /* main.swift */; };
@@ -898,6 +899,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845F0CD4240F910800FAE2FE /* MergeSort.swift in Sources */,
 				848F7DBC240CEDBB00759E57 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
