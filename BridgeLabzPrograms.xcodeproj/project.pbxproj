@@ -27,6 +27,7 @@
 		84D95760240E72F8001EAC67 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9575F240E72F8001EAC67 /* main.swift */; };
 		84D95765240E7313001EAC67 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95764240E7313001EAC67 /* Anagram.swift */; };
 		84D95767240E7328001EAC67 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95766240E7328001EAC67 /* Prime.swift */; };
+		84D95769240E759E001EAC67 /* PrimeAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D95768240E759E001EAC67 /* PrimeAnagram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -202,6 +203,7 @@
 		84D9575F240E72F8001EAC67 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84D95764240E7313001EAC67 /* Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anagram.swift; sourceTree = "<group>"; };
 		84D95766240E7328001EAC67 /* Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
+		84D95768240E759E001EAC67 /* PrimeAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeAnagram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +479,7 @@
 				84D9575F240E72F8001EAC67 /* main.swift */,
 				84D95764240E7313001EAC67 /* Anagram.swift */,
 				84D95766240E7328001EAC67 /* Prime.swift */,
+				84D95768240E759E001EAC67 /* PrimeAnagram.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -949,6 +952,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D95760240E72F8001EAC67 /* main.swift in Sources */,
+				84D95769240E759E001EAC67 /* PrimeAnagram.swift in Sources */,
 				84D95767240E7328001EAC67 /* Prime.swift in Sources */,
 				84D95765240E7313001EAC67 /* Anagram.swift in Sources */,
 			);

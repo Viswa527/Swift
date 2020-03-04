@@ -20,8 +20,8 @@ public class Anagram
         str = str.uppercased()                                          // to convert into uppercase
         str1 = str1.uppercased()
 
-        var strArray=str.sorted()                                           // to be sorted and returns an Array of characters
-        var str1Array=str1.sorted()
+        let strArray = str.sorted()                                           // to be sorted and returns an Array of characters
+        let str1Array = str1.sorted()
 
         loop:if str1Array.count == strArray.count  // nameing the condiitonal loop as "loop" checks both Arrays length are equal or not
             {
@@ -29,8 +29,7 @@ public class Anagram
                 {
                     if str1Array[i] != strArray[i]
                     {
-                        return false
-                        break loop                                     // to exit the loop to end of "loop"
+                        return false    // to exit the loop to end of "loop"
                     }
                 }
                 return true

@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
-
+var val = readLine()
+var str:String?
+guard let val = str else{
+    return
+}
+return str
+print(val)
