@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		845F0CC7240F878400FAE2FE /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CC6240F878400FAE2FE /* Insertion.swift */; };
 		845F0CC9240F883700FAE2FE /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CC8240F883700FAE2FE /* Bubble.swift */; };
+		845F0CCB240F888000FAE2FE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F0CCA240F888000FAE2FE /* MergeSort.swift */; };
 		848F7D83240CC22500759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D82240CC22500759E57 /* main.swift */; };
 		848F7D90240CC8AC00759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D8F240CC8AC00759E57 /* main.swift */; };
 		848F7D9B240CCC0400759E57 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F7D9A240CCC0400759E57 /* main.swift */; };
@@ -173,6 +174,7 @@
 /* Begin PBXFileReference section */
 		845F0CC6240F878400FAE2FE /* Insertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insertion.swift; sourceTree = "<group>"; };
 		845F0CC8240F883700FAE2FE /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		845F0CCA240F888000FAE2FE /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		848F7D7F240CC22500759E57 /* Anagram */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Anagram; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F7D82240CC22500759E57 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		848F7D8D240CC8AC00759E57 /* Prime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prime; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,6 +486,7 @@
 				84D95764240E7313001EAC67 /* Anagram.swift */,
 				84D95766240E7328001EAC67 /* Prime.swift */,
 				84D95768240E759E001EAC67 /* PrimeAnagram.swift */,
+				845F0CCA240F888000FAE2FE /* MergeSort.swift */,
 				845F0CC6240F878400FAE2FE /* Insertion.swift */,
 				845F0CC8240F883700FAE2FE /* Bubble.swift */,
 			);
@@ -961,6 +964,7 @@
 				845F0CC9240F883700FAE2FE /* Bubble.swift in Sources */,
 				845F0CC7240F878400FAE2FE /* Insertion.swift in Sources */,
 				84D95769240E759E001EAC67 /* PrimeAnagram.swift in Sources */,
+				845F0CCB240F888000FAE2FE /* MergeSort.swift in Sources */,
 				84D95767240E7328001EAC67 /* Prime.swift in Sources */,
 				84D95765240E7313001EAC67 /* Anagram.swift in Sources */,
 			);
