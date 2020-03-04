@@ -7,8 +7,13 @@
 //
 
 import Foundation
-
-var unSortedArray = [6,8,3,12,5,14,2,44,1,9,4,7,0]      // targeted array to make into sorted Array
+print("Enter the size of Array : ",terminator:" ")
+let length = Int(readLine()!)!
+var unsortedArray:Array<Int> = []
+for _ in 0...length-1
+{
+    unsortedArray.append(Int(readLine()!)!)
+}                                                       // targeted array to make into sorted Array
 func insertionSort(_ array:Array<Int>) -> [Int]         // Insertion sort function returns sorted Array
 {
     var arrSort = array                                 // taken into new Array because array is umutable so we copied into arrSort
@@ -26,7 +31,8 @@ func insertionSort(_ array:Array<Int>) -> [Int]         // Insertion sort functi
     }
     return arrSort                                      // returning the Array
 }
-var sortedArray = insertionSort(unSortedArray)          // collecting the Array which is returned by the insertionSort function
+
+var sortedArray = insertionSort(unsortedArray)
 for i in 0...sortedArray.count-1
 {
     print(sortedArray[i],terminator:" ")
