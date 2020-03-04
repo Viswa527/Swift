@@ -20,7 +20,7 @@ if binaryString.count % 8 != 0
     }
 }
 
-let valueBefore = convert.toValue(binaryString)
+let valueBefore = Binary.toValue(binaryString)
 var temp = 0
 var nn = ""
 var oo = ""
@@ -36,4 +36,4 @@ for i in binaryString
         oo.append(i)
     }
 }
-print(convert.toValue(oo+nn))
+print(Binary.toValue(oo+nn))

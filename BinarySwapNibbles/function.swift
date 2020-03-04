@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class convert
+public class Convert
 {
     public static func toValue(_ sr:String) -> Int      // Accepts binary as String
     {
