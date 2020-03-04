@@ -9,6 +9,34 @@
 import Foundation
 public class Binary
 {
+    public static func binarySearch(_ numbers: [String],_ value: String) -> Any  // function to search an string and returns index value or string
+    {
+        var left = 0
+        var right = numbers.count - 1
+
+        while left <= right
+        {
+            let middle = (left + right)/2
+
+            if numbers[middle] < value
+            {
+                left = middle + 1
+            }
+            else
+            {
+                if numbers[middle] > value
+                {
+                    right = middle - 1
+                }
+                else
+                {
+                    return middle
+                }
+            }
+        }
+        return "Not found"
+    }
+    
     public static func toBinary(_ number : Int) -> String                           // function to convert int -> Binary (String format)
     {
         var str = ""
