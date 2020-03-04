@@ -8,51 +8,28 @@
 
 import Foundation
 
-var unSortedArray = [6,8,3,12,5,14,2,44,1,9,4,7,0]
-func sortMerge(_ array:[Int]) -> [Int]
+// Basic properties of a Tree
+class Node
 {
-    if array.count == 1
+    let value:Int
+    var leftChild:Node?
+    var rightChild:Node?
+    init(value:Int,leftChild:Node?,rightChild:Node?)
     {
-        return array
-    }
-    else
-    {
-        let len = array.count/2
-        let co = array.count
-        let arr = sortMerge(Array(array[0..<len]))
-        let brr = sortMerge(Array(array[len..<co]))
-        var crr:[Int] = []
-        var a = 0
-        var b = 0
-        while  a<arr.count && b<brr.count
-        {
-            if arr[a] < brr[b]
-            {
-                crr.append(arr[a])
-                a=a+1
-            }
-            else
-            {
-                crr.append(brr[b])
-                b=b+1
-            }
-        }
-        while a<arr.count
-        {
-            crr.append(arr[a])
-            a=a+1
-        }
-        while b<brr.count
-        {
-            crr.append(brr[b])
-            b=b+1
-        }
-        return crr
-        
+        self.value = value
+        self.leftChild = leftChild
+        self.rightChild = rightChild
     }
 }
-let sortedArray = sortMerge(unSortedArray)
-for i in sortedArray
-{
-    print(i,terminator:" ")
-}
+
+// Left Branch
+let oneNode = Node(value: 1, leftChild: nil, rightChild: nil)
+let fiveNode = Node(value: 5, leftChild: oneNode, rightChild: nil)
+
+// Right Branch
+let twentyTwo = Node(value: 22, leftChild: nil, rightChild: nil)
+let eleven = Node(value: 11, leftChild: nil, rightChild: nil)
+let twentyNode = Node(value: 20, leftChild: eleven, rightChild: twentyTwo)
+
+// Root Node
+let tenNode = Node(value: 10, leftChild: fiveNode, rightChild: twentyNode)
