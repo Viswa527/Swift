@@ -9,69 +9,49 @@
 import Foundation
 
 var unSortedArray = [6,8,3,12,5,14,2,44,1,9,4,7,0]
-
-func mergeSort(_ array:Array<Int>) -> [Int]
+func sortMerge(_ array:Array<Int>) -> [Int]
 {
-  if array.count > 1
+    if array.count == 1
     {
-        let halfLen = array.count / 2
-        let leftArr = mergeSort(Array(array[0 ..< halfLen]))                    // divides the Array into half and pass to mergesort method until the length of array comes to 1
-        let rightArr = mergeSort(Array(array[halfLen ..< array.count]))
-        
-        return merge(leftArr, rightArr)                                         // while returning all the arrays are merged in sorted manner
-        
-  }
-    else
-    {
-    return array
-    
-    }
-}
-
-func merge(_ left:Array<Int>, _ right:Array<Int>) -> [Int]                      // mergeing mechanism
-{
-  var leftIndex = 0
-  var rightIndex = 0
-  var orderedArray:Array<Int>=[]
-    
-  while leftIndex < left.count && rightIndex < right.count                      //sorts the two array up until one array length comes to nil or 0
-  {
-    let leftElement = left[leftIndex]
-    let rightElement = right[rightIndex]
-    if leftElement < rightElement
-    {
-      orderedArray.append(leftElement)
-      leftIndex += 1
+        return array
     }
     else
     {
-        if leftElement > rightElement
+        let len = array.count/2
+        let co = array.count
+        let arr = sortMerge(Array(array[0..<len]))
+        let brr = sortMerge(Array(array[len..<co]))
+        var crr:[Int] = []
+        var a = 0
+        var b = 0
+        while  a<arr.count && b<brr.count
         {
-            orderedArray.append(rightElement)
-            rightIndex += 1
+            if arr[a] < brr[b]
+            {
+                crr.append(arr[a])
+                a=a+1
+            }
+            else
+            {
+                crr.append(brr[b])
+                b=b+1
+            }
         }
-        else
+        while a<arr.count
         {
-            orderedArray.append(leftElement)
-            leftIndex += 1
-            orderedArray.append(rightElement)
-            rightIndex += 1
+            crr.append(arr[a])
+            a=a+1
         }
+        while b<brr.count
+        {
+            crr.append(brr[b])
+            b=b+1
+        }
+        return crr
+        
     }
- }
-  while leftIndex < left.count                                                     // the elements which are not insert,will be inserted here
-    {
-        orderedArray.append(left[leftIndex])
-        leftIndex += 1
-    }
-  while rightIndex < right.count                                                  // same as above comments if exists in  right array added here
-    {
-        orderedArray.append(right[rightIndex])
-        rightIndex += 1
-    }
-    return orderedArray
 }
-var sortedArray = mergeSort(unSortedArray)
+var sortedArray = sortMerge(unSortedArray)
 for i in sortedArray
 {
     print(i,terminator:" ")
