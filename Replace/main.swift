@@ -7,6 +7,5 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-print("VISWA")
+let name = readLine()!
+print("Hello \(name),How are you")
