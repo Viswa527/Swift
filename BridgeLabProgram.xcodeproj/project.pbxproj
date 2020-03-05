@@ -37,7 +37,7 @@
 		840CAB9D2410BEC500428A42 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -70,6 +70,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		840CABC92410C50000428A42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +94,7 @@
 		840CABB72410C1B300428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		840CABC02410C34000428A42 /* Factors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Factors; sourceTree = BUILT_PRODUCTS_DIR; };
 		840CABC22410C34000428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		840CABCB2410C50000428A42 /* Utility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Utility; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840CABC82410C50000428A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -155,6 +172,7 @@
 				840CABAA2410BFB600428A42 /* PowerOf2 */,
 				840CABB52410C1B300428A42 /* Harmonic */,
 				840CABC02410C34000428A42 /* Factors */,
+				840CABCB2410C50000428A42 /* Utility */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +330,23 @@
 			productReference = 840CABC02410C34000428A42 /* Factors */;
 			productType = "com.apple.product-type.tool";
 		};
+		840CABCA2410C50000428A42 /* Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840CABCF2410C50000428A42 /* Build configuration list for PBXNativeTarget "Utility" */;
+			buildPhases = (
+				840CABC72410C50000428A42 /* Sources */,
+				840CABC82410C50000428A42 /* Frameworks */,
+				840CABC92410C50000428A42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utility;
+			productName = Utility;
+			productReference = 840CABCB2410C50000428A42 /* Utility */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -340,6 +375,9 @@
 					840CABBF2410C34000428A42 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					840CABCA2410C50000428A42 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 840CAB812410B3E500428A42 /* Build configuration list for PBXProject "BridgeLabProgram" */;
@@ -361,6 +399,7 @@
 				840CABA92410BFB600428A42 /* PowerOf2 */,
 				840CABB42410C1B300428A42 /* Harmonic */,
 				840CABBF2410C34000428A42 /* Factors */,
+				840CABCA2410C50000428A42 /* Utility */,
 			);
 		};
 /* End PBXProject section */
@@ -414,6 +453,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840CABC72410C50000428A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -456,7 +502,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -638,6 +684,24 @@
 			};
 			name = Release;
 		};
+		840CABD02410C50000428A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		840CABD12410C50000428A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +764,15 @@
 			buildConfigurations = (
 				840CABC52410C34000428A42 /* Debug */,
 				840CABC62410C34000428A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840CABCF2410C50000428A42 /* Build configuration list for PBXNativeTarget "Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840CABD02410C50000428A42 /* Debug */,
+				840CABD12410C50000428A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

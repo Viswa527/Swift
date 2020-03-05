@@ -6,13 +6,13 @@
 //  Copyright © 2020 admin. All rights reserved.
 //
 import Foundation
-var num=Int(readLine()!)!    // User input
+var year = Int(readLine()!)!    // User input
 
-if num%400==0 || num%4==0 && num%100 != 0    //condition to check Number is leapyear or not
+if year%400 == 0 || year%4 == 0 && year%100 != 0    //condition to check Number is leapyear or not
 {
-    print("\(num) is a Leap Year")
+    print("\(year) is a Leap Year")
 }
 else
 {
-    print("\(num) is not a Leap  Year")
+    print("\(year) is not a Leap  Year")
 }
