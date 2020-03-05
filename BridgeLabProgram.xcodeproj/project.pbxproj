@@ -11,6 +11,7 @@
 		840CAB972410B8FC00428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CAB962410B8FC00428A42 /* main.swift */; };
 		840CABA22410BEC500428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CABA12410BEC500428A42 /* main.swift */; };
 		840CABAD2410BFB600428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CABAC2410BFB600428A42 /* main.swift */; };
+		840CABB82410C1B300428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CABB72410C1B300428A42 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		840CABB32410C1B300428A42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +71,8 @@
 		840CABA12410BEC500428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		840CABAA2410BFB600428A42 /* PowerOf2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PowerOf2; sourceTree = BUILT_PRODUCTS_DIR; };
 		840CABAC2410BFB600428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		840CABB52410C1B300428A42 /* Harmonic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Harmonic; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CABB72410C1B300428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840CABB22410C1B300428A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +121,7 @@
 				840CAB952410B8FC00428A42 /* FlipCoin */,
 				840CABA02410BEC500428A42 /* LeapYear */,
 				840CABAB2410BFB600428A42 /* PowerOf2 */,
+				840CABB62410C1B300428A42 /* Harmonic */,
 				840CAB872410B3E500428A42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +133,7 @@
 				840CAB942410B8FC00428A42 /* FlipCoin */,
 				840CAB9F2410BEC500428A42 /* LeapYear */,
 				840CABAA2410BFB600428A42 /* PowerOf2 */,
+				840CABB52410C1B300428A42 /* Harmonic */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +168,14 @@
 				840CABAC2410BFB600428A42 /* main.swift */,
 			);
 			path = PowerOf2;
+			sourceTree = "<group>";
+		};
+		840CABB62410C1B300428A42 /* Harmonic */ = {
+			isa = PBXGroup;
+			children = (
+				840CABB72410C1B300428A42 /* main.swift */,
+			);
+			path = Harmonic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +249,23 @@
 			productReference = 840CABAA2410BFB600428A42 /* PowerOf2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		840CABB42410C1B300428A42 /* Harmonic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840CABB92410C1B300428A42 /* Build configuration list for PBXNativeTarget "Harmonic" */;
+			buildPhases = (
+				840CABB12410C1B300428A42 /* Sources */,
+				840CABB22410C1B300428A42 /* Frameworks */,
+				840CABB32410C1B300428A42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Harmonic;
+			productName = Harmonic;
+			productReference = 840CABB52410C1B300428A42 /* Harmonic */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +288,9 @@
 					840CABA92410BFB600428A42 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					840CABB42410C1B300428A42 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 840CAB812410B3E500428A42 /* Build configuration list for PBXProject "BridgeLabProgram" */;
@@ -261,6 +310,7 @@
 				840CAB932410B8FC00428A42 /* FlipCoin */,
 				840CAB9E2410BEC500428A42 /* LeapYear */,
 				840CABA92410BFB600428A42 /* PowerOf2 */,
+				840CABB42410C1B300428A42 /* Harmonic */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				840CABAD2410BFB600428A42 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840CABB12410C1B300428A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CABB82410C1B300428A42 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +544,24 @@
 			};
 			name = Release;
 		};
+		840CABBA2410C1B300428A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		840CABBB2410C1B300428A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +606,15 @@
 			buildConfigurations = (
 				840CABAF2410BFB600428A42 /* Debug */,
 				840CABB02410BFB600428A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840CABB92410C1B300428A42 /* Build configuration list for PBXNativeTarget "Harmonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840CABBA2410C1B300428A42 /* Debug */,
+				840CABBB2410C1B300428A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
