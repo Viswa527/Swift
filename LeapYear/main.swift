@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 var num=Int(readLine()!)!
 
 if num%400==0 || num%4==0 && num%100 != 0
