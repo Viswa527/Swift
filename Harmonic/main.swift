@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 var number=Int(readLine()!)!
 var total=1.00
 if number > -1
@@ -26,8 +25,8 @@ if number > -1
              {
                case 1:
                      print(1)
-           default:
-              print(0)
+                default:
+                     print(0)
             }
     }
 }
