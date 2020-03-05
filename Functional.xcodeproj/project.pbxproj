@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		840CAC1A2410D0B200428A42 /* Fucntionsl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fucntionsl; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CAC1A2410D0B200428A42 /* Functional */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Functional; sourceTree = BUILT_PRODUCTS_DIR; };
 		840CAC1D2410D0B200428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 		840CAC1B2410D0B200428A42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				840CAC1A2410D0B200428A42 /* Fucntionsl */,
+				840CAC1A2410D0B200428A42 /* Functional */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +65,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		840CAC192410D0B200428A42 /* Fucntionsl */ = {
+		840CAC192410D0B200428A42 /* Functional */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840CAC212410D0B200428A42 /* Build configuration list for PBXNativeTarget "Fucntionsl" */;
+			buildConfigurationList = 840CAC212410D0B200428A42 /* Build configuration list for PBXNativeTarget "Functional" */;
 			buildPhases = (
 				840CAC162410D0B200428A42 /* Sources */,
 				840CAC172410D0B200428A42 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = Fucntionsl;
+			name = Functional;
 			productName = Fucntionsl;
-			productReference = 840CAC1A2410D0B200428A42 /* Fucntionsl */;
+			productReference = 840CAC1A2410D0B200428A42 /* Functional */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 840CAC152410D0B200428A42 /* Build configuration list for PBXProject "Fucntionsl" */;
+			buildConfigurationList = 840CAC152410D0B200428A42 /* Build configuration list for PBXProject "Functional" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				840CAC192410D0B200428A42 /* Fucntionsl */,
+				840CAC192410D0B200428A42 /* Functional */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		840CAC152410D0B200428A42 /* Build configuration list for PBXProject "Fucntionsl" */ = {
+		840CAC152410D0B200428A42 /* Build configuration list for PBXProject "Functional" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840CAC1F2410D0B200428A42 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840CAC212410D0B200428A42 /* Build configuration list for PBXNativeTarget "Fucntionsl" */ = {
+		840CAC212410D0B200428A42 /* Build configuration list for PBXNativeTarget "Functional" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840CAC222410D0B200428A42 /* Debug */,
