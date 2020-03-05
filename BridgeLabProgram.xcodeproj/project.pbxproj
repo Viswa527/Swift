@@ -10,6 +10,7 @@
 		840CAB8A2410B3E500428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CAB892410B3E500428A42 /* main.swift */; };
 		840CAB972410B8FC00428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CAB962410B8FC00428A42 /* main.swift */; };
 		840CABA22410BEC500428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CABA12410BEC500428A42 /* main.swift */; };
+		840CABAD2410BFB600428A42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CABAC2410BFB600428A42 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		840CABA82410BFB600428A42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +59,8 @@
 		840CAB962410B8FC00428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		840CAB9F2410BEC500428A42 /* LeapYear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeapYear; sourceTree = BUILT_PRODUCTS_DIR; };
 		840CABA12410BEC500428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		840CABAA2410BFB600428A42 /* PowerOf2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PowerOf2; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CABAC2410BFB600428A42 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840CABA72410BFB600428A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +101,7 @@
 				840CAB882410B3E500428A42 /* Replace */,
 				840CAB952410B8FC00428A42 /* FlipCoin */,
 				840CABA02410BEC500428A42 /* LeapYear */,
+				840CABAB2410BFB600428A42 /* PowerOf2 */,
 				840CAB872410B3E500428A42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +112,7 @@
 				840CAB862410B3E500428A42 /* BridgeLabProgram */,
 				840CAB942410B8FC00428A42 /* FlipCoin */,
 				840CAB9F2410BEC500428A42 /* LeapYear */,
+				840CABAA2410BFB600428A42 /* PowerOf2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +139,14 @@
 				840CABA12410BEC500428A42 /* main.swift */,
 			);
 			path = LeapYear;
+			sourceTree = "<group>";
+		};
+		840CABAB2410BFB600428A42 /* PowerOf2 */ = {
+			isa = PBXGroup;
+			children = (
+				840CABAC2410BFB600428A42 /* main.swift */,
+			);
+			path = PowerOf2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +203,23 @@
 			productReference = 840CAB9F2410BEC500428A42 /* LeapYear */;
 			productType = "com.apple.product-type.tool";
 		};
+		840CABA92410BFB600428A42 /* PowerOf2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840CABAE2410BFB600428A42 /* Build configuration list for PBXNativeTarget "PowerOf2" */;
+			buildPhases = (
+				840CABA62410BFB600428A42 /* Sources */,
+				840CABA72410BFB600428A42 /* Frameworks */,
+				840CABA82410BFB600428A42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PowerOf2;
+			productName = PowerOf2;
+			productReference = 840CABAA2410BFB600428A42 /* PowerOf2 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +237,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					840CAB9E2410BEC500428A42 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					840CABA92410BFB600428A42 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -211,6 +260,7 @@
 				840CAB852410B3E500428A42 /* BridgeLabProgram */,
 				840CAB932410B8FC00428A42 /* FlipCoin */,
 				840CAB9E2410BEC500428A42 /* LeapYear */,
+				840CABA92410BFB600428A42 /* PowerOf2 */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				840CABA22410BEC500428A42 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840CABA62410BFB600428A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CABAD2410BFB600428A42 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +468,24 @@
 			};
 			name = Release;
 		};
+		840CABAF2410BFB600428A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		840CABB02410BFB600428A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +521,15 @@
 			buildConfigurations = (
 				840CABA42410BEC500428A42 /* Debug */,
 				840CABA52410BEC500428A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840CABAE2410BFB600428A42 /* Build configuration list for PBXNativeTarget "PowerOf2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840CABAF2410BFB600428A42 /* Debug */,
+				840CABB02410BFB600428A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
