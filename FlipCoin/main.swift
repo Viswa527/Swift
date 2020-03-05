@@ -11,6 +11,7 @@ import Foundation
 var Number=Int(readLine()!)!
 var tails:Int=0
 var heads:Int=0
+
 for _ in 0...Number-1
 {
     if Bool.random()
