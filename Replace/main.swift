@@ -8,4 +8,4 @@
 
 import Foundation
 
-print("Hello \(readLine()!),How are you")
+print("Hello \(readLine()!), How are you")

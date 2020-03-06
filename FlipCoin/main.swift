@@ -24,5 +24,5 @@ for _ in 0...Number-1
     }
 }
 var percentageOfHead=(Float(heads)*100.0)/Float(Number)         //calculating the % of Heads
-print("Percentage of getting Heads :  \(percentageOfHead)")
-print("Percentage of getting Tails :  \(100-percentageOfHead)") //calculating the % of Tails
+print("Percentage of getting Heads  :  \(percentageOfHead)")
+print("Percentage of getting Tails  :  \(100-percentageOfHead)") //calculating the % of Tails

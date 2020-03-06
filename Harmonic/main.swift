@@ -8,15 +8,15 @@
 
 import Foundation
 
-var number=Int(readLine()!)!    // User Input
-var total=1.00            // Varable to add all the elements
+var number = Int(readLine()!)!    // User Input
+var total = 1.00            // Varable to add all the elements
 if number > -1            //check's the condition whether the user input is above 0
 {
-    if number>1
+    if number > 1
     {
-        for i in 1...number
+        for index in 1...number
             {
-               total=total+Double(1/Double(i))        //total will be updated everytime in for-loop
+               total=total+Double(1/Double(index))        //total will be updated everytime in for-loop
             }
             print(total)
         }

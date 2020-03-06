@@ -16,7 +16,7 @@ if number >= 0
     {
         for _ in 0...number-1
         {
-            value=value*2        //calculation of Power of 2
+            value = value * 2        //calculation of Power of 2
         }
         print("2^\(number) : \(value)")
     }

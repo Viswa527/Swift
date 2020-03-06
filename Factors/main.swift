@@ -18,4 +18,4 @@ for value in 1...number
         array.append(value)
     }
 }
-print("Factors of the \(number) is  :  \(array)")
+print("Factors of the \(number) is  : \(array)")
