@@ -13,9 +13,9 @@ public class Prime
     {
         if number > 3 && number > -1    // condition
         {
-            for i in 2...number-1
+            for iterator in 2...number-1
             {
-                if number % i == 0
+                if number % iterator == 0
                 {
                     return false
                 }

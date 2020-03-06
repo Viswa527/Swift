@@ -9,7 +9,7 @@
 import Foundation
 public class Binary
 {
-    public static func binarySearch(_ numbers: [String],_ value: String) -> Any  // function to search an string and returns index value or string
+    public static func binarySearchOf(_ numbers: [String],_ value: String) -> Any  // function to search an string and returns index value or string
     {
         var left = 0
         var right = numbers.count - 1
@@ -37,19 +37,19 @@ public class Binary
         return "Not found"
     }
     
-    public static func toBinary(_ number : Int) -> String                           // function to convert int -> Binary (String format)
+    public static func toBinaryOf(_ number : Int) -> String                           // function to convert int -> Binary (String format)
     {
-        var str = ""
-        var numberI = number
-        while numberI != 0
+        var string = ""
+        var number = number
+        while number != 0
         {
-            let temp = numberI%2
-            str = String(temp)+str
-            numberI = numberI/2
+            let temp = number%2
+            string = String(temp)+string
+            number = number/2
         }
-        return str
+        return string
     }
-    public static func toValue(_ sr:String) -> Int      // Accepts binary as String
+    public static func toDecimalOf(_ sr:String) -> Int      // Accepts binary as String
     {
         let str = sr
         var val:Int = 0

@@ -14,10 +14,10 @@ var rate:Double = Double(readLine()!)!                                          
 
 func paymentMonthly(_ principal:Double,_ year:Double,_ rate:Double) -> Double   // function to calculate the paymentMonthly
 {
-    let n:Double = 12 * year
-    let r:Double = principal * Double(rate)/(1200)
-    let denomi:Double = 1 - pow(Double(1+r),Double(-n))
-    let result:Double = r/denomi
+    let numberOfmonths:Double = 12 * year
+    let ratePerMonth:Double = principal * Double(rate)/(1200)
+    let denomi:Double = 1 - pow(Double(1+ratePerMonth),Double(-numberOfmonths))
+    let result:Double = ratePerMonth/denomi
     return result                                                                // result will be returned
 }
 print(paymentMonthly(principal,year,rate))

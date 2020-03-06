@@ -6,9 +6,9 @@
 //  Copyright © 2020 admin. All rights reserved.
 
 import Foundation
-var str = readLine()!
-var str1 = readLine()!
-if Anagram.isAnagram(str,str1)
+var string = readLine()!
+var string1 = readLine()!
+if Anagram.isAnagram(string,string1)
 {
   print("Anagram")
 }

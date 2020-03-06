@@ -9,7 +9,7 @@
 import Foundation
 
 var number = Int(readLine()!)!                                  // to take input from the user
-var binaryString = Binary.toBinary(number)
+var binaryString = Binary.toBinaryOf(number)
 
 if binaryString.count >= 4 && binaryString.count % 4 == 0           // checking the string bust be in length 4
 {

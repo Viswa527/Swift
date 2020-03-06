@@ -16,9 +16,9 @@ class PrimeAnagram
             {
                 if number > 3 && number > -1
                 {
-                    for i in 2...number-1
+                    for iterator in 2...number-1
                     {
-                        if number % i == 0
+                        if number % iterator == 0
                         {
                             return false
                         }
@@ -33,12 +33,12 @@ class PrimeAnagram
             func reverse(_ number:Int) -> Int           // function to convert the number to reverse and returns the reversed number
             {
                 var value = 0
-                var num=number
-                while (num != 0)                        // Reverse mechanisam
+                var number=number
+                while (number != 0)                        // Reverse mechanisam
                 {
                     value = value * 10
-                    value = value + num % 10
-                    num = num / 10
+                    value = value + number % 10
+                    number = number / 10
                 }
                 return value
             }

@@ -16,7 +16,7 @@ for _ in 0...numberOfElements-1                         // reading the inputs fr
     let x = Int(readLine()!)!
     unsortedArray.append(x)
 }
-var sortedArray = Bubble.bubbleSort(unsortedArray)
+var sortedArray = Bubble.bubbleSortOf(unsortedArray)
 
 for i in sortedArray
 {

@@ -9,22 +9,22 @@
 import Foundation
 public class Bubble
 {
-   public static func bubbleSort(_ array:Array<Int>) -> [Int]            // function to bubble sort which returns sorted array
+   public static func bubbleSortOf(_ array:Array<Int>) -> [Int]            // function to bubble sort which returns sorted array
     {
-        var arrSort:Array<Int> = array
-        let len=arrSort.count
-        for _ in 0...len-2
+        var arraySort:Array<Int> = array
+        let length = arraySort.count
+        for _ in 0...length-2
         {
-            for j in 0...len-2
+            for j in 0...length-2
             {
-                if arrSort[j+1] < arrSort[j]                    //logic for bubble sort
+                if arraySort[j+1] < arraySort[j]                    //logic for bubble sort
                 {
-                    let temp = arrSort[j+1]                     // swapping values in Array
-                    arrSort[j+1] = arrSort[j]
-                    arrSort[j] = temp
+                    let temp = arraySort[j+1]                     // swapping values in Array
+                    arraySort[j+1] = arraySort[j]
+                    arraySort[j] = temp
                 }
             }
         }
-        return arrSort
+        return arraySort
     }
 }

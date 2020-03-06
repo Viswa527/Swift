@@ -9,21 +9,21 @@
 import Foundation
 public class Insertion
 {
-    public static func insertionSort(_ array:Array<Int>) -> [Int]         // Insertion sort function returns sorted Array
+    public static func insertionSortOf(_ array:Array<Int>) -> [Int]         // Insertion sort function returns sorted Array
     {
-            var arrSort = array                                 // taken into new Array because array is umutable so we copied into arrSort
-            for i in 1...array.count-1
+            var arraySort = array                                 // taken into new Array because array is umutable so we copied into arrSort
+            for index in 1...array.count-1
             {
-                let value = arrSort[i]                          // to insert the value in postion
-                var index = i-1
-                while index >= 0 && value < arrSort[index]      // condition index should me greater then are equal to zero and values must be compared
+                let value = arraySort[index]                          // to insert the value in postion
+                var index2 = index-1
+                while index2 >= 0 && value < arraySort[index2]      // condition index should me greater then are equal to zero and values must be compared
                 {
-                    let temp = arrSort[index+1]                 // swapping two values in Array
-                    arrSort[index+1] = arrSort[index]
-                    arrSort[index] = temp
-                    index=index-1
+                    let temp = arraySort[index2+1]                 // swapping two values in Array
+                    arraySort[index2+1] = arraySort[index2]
+                    arraySort[index2] = temp
+                    index2 = index2-1
                 }
             }
-            return arrSort                                      // returning the Array
+            return arraySort                                      // returning the Array
     }
 }

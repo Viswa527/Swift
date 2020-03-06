@@ -15,7 +15,7 @@ for _ in 0...length-1
     unsortedArray.append(Int(readLine()!)!)
 }                                                       // targeted array to make into sorted Array
 
-var sortedArray = Insertion.insertionSort(unsortedArray)
+var sortedArray = Insertion.insertionSortOf(unsortedArray)
 
 for i in 0...sortedArray.count-1
 {

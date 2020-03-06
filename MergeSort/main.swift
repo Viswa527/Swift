@@ -15,7 +15,7 @@ for _ in 0...length-1
     unSortedArray.append(Int(readLine()!)!)
 }
 
-var sortedArray = Merge.mergeSort(unSortedArray)
+var sortedArray = Merge.mergeSortOf(unSortedArray)
 for i in sortedArray
 {
     print(i,terminator:" ")

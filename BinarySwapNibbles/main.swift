@@ -9,7 +9,7 @@
 import Foundation
 
 var number = Int(readLine()!)!
-var binaryString = Binary.toBinary(number)
+var binaryString = Binary.toBinaryOf(number)
 
 if binaryString.count % 8 != 0
 {
@@ -20,7 +20,7 @@ if binaryString.count % 8 != 0
     }
 }
 
-let valueBefore = Binary.toValue(binaryString)
+let valueBefore = Binary.toDecimalOf(binaryString)
 var temp = 0
 var nn = ""
 var oo = ""
@@ -36,4 +36,4 @@ for i in binaryString
         oo.append(i)
     }
 }
-print(Binary.toValue(oo+nn))
+print(Binary.toDecimalOf(oo+nn))

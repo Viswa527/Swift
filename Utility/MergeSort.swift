@@ -9,7 +9,7 @@
 import Foundation
 public class Merge
 {
-    public static func mergeSort(_ array:Array<Int>) -> [Int]
+    public static func mergeSortOf(_ array:Array<Int>) -> [Int]
     {
         if array.count == 1
         {
@@ -17,37 +17,37 @@ public class Merge
         }
         else
         {
-            let len = array.count/2
-            let co = array.count
-            let arr = mergeSort(Array(array[0..<len]))
-            let brr = mergeSort(Array(array[len..<co]))
-            var crr:[Int] = []
-            var a = 0
-            var b = 0
-            while  a<arr.count && b<brr.count
+            let halfLength = array.count/2
+            let length = array.count
+            let array = mergeSortOf(Array(array[0..<halfLength]))
+            let bArray = mergeSortOf(Array(array[halfLength..<length]))
+            var cArray:[Int] = []
+            var arrayIndex = 0
+            var bArrayIndex = 0
+            while  arrayIndex<array.count && bArrayIndex<bArray.count
             {
-                if arr[a] < brr[b]
+                if array[arrayIndex] < bArray[bArrayIndex]
                 {
-                    crr.append(arr[a])
-                    a=a+1
+                    cArray.append(array[arrayIndex])
+                    arrayIndex = arrayIndex+1
                 }
                 else
                 {
-                    crr.append(brr[b])
-                    b=b+1
+                    cArray.append(bArray[bArrayIndex])
+                    bArrayIndex = bArrayIndex+1
                 }
             }
-            while a<arr.count
+            while arrayIndex<array.count
             {
-                crr.append(arr[a])
-                a=a+1
+                cArray.append(array[arrayIndex])
+                arrayIndex = arrayIndex+1
             }
-            while b<brr.count
+            while bArrayIndex<bArray.count
             {
-                crr.append(brr[b])
-                b=b+1
+                cArray.append(bArray[bArrayIndex])
+                bArrayIndex = bArrayIndex+1
             }
-            return crr
+            return cArray
             
         }
     }
