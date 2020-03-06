@@ -10,37 +10,33 @@ import Foundation
 var stack = Double(readLine()!)!
 var goal = Double(readLine()!)!
 var trails = Double(readLine()!)!
-func gambler(_ s:Double,_ g:Double,_ t:Double)
+func gambler(_ stack:Double,_ goal:Double,_ trail:Double)
 {
-    var b = 0
-    let tr:Int = Int(t)
-    var w:Double = 0.0
-    for i in 0..<tr
+    var bet = 0
+    let trails:Int = Int(trail)
+    var wins:Double = 0.0
+    for i in 0..<trails
     {
-        var cash = s;
-        while (cash > 0 && cash < g)
+        var cash = stack;
+        while (cash > 0 && cash < goal)
         {
-            b=b+1;
+            bet = bet + 1;
             if Bool.random()
             {
                 cash=cash+1;
-             //   print(cash)
             }
             else
             {
                  cash=cash-1;
-                //print(cash)
             }
         }
-        if (cash == g)
+        if (cash == goal)
         {
-            w=w+1;
-            print(i)
-            break
+            wins = wins+1;
         }
     }
-    print("Number of games won : \(w) ")
-    let p = ((w / t)*100)
+    print("Number of games won : \(wins) ")
+    let p = ((wins / trail)*100)
     let q = 100 - p
     print("percentage of winning : \(p)")
     print("Percentage of lossing : \(q)")

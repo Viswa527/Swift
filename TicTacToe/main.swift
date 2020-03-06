@@ -60,8 +60,6 @@ class Tic
     }
 }
 public var count:Int = 0
-
-var symbol = "X"
 func player()
 {
         Tic.board()
@@ -111,6 +109,7 @@ func player2()
             }
             else
             {
+
                 print("!.....DRAW......!")
             }
         }
@@ -120,6 +119,8 @@ func player2()
         }
     
 }
+var symbol = "X"
+
 if Bool.random() == true
 {
     print("Player 1 starts first symbol is : X")
@@ -127,6 +128,6 @@ if Bool.random() == true
 }
 else
 {
-    print("Player 2 starts first symbol is : O")
+    print("Player 2 starts first symbol is : X")
     player2()
 }
