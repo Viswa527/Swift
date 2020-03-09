@@ -8,19 +8,20 @@
 
 import Foundation
 
-public class Node<T: Equatable>
-{
+public class Node<T: Comparable> {
   var value: T? = nil
   var next: Node? = nil
 }
-public class LinkedList<T: Equatable>
-{
-  var head = Node<T>()
+
+public class LinkedList<T: Comparable> {
+    var head = Node<T>()
+    var length = 0
     public func insert(value: T)
     {
       
       if self.head.value == nil     //find to see if empty list
       {
+        length = length + 1
         self.head.value = value
       }
       else
@@ -33,6 +34,7 @@ public class LinkedList<T: Equatable>
         let newNode = Node<T>()          //once found, create a new node and connect the linked list
         newNode.value = value
         lastNode.next = newNode
+        length = length + 1
       }
     }
     public func remove(value: T)
@@ -61,18 +63,42 @@ public class LinkedList<T: Equatable>
           }
           else
           {
-            previousNode.next = nil                 //if at the end, the next is nil
+            previousNode.next = nil
+            length = length - 1//if at the end, the next is nil
           }
         }
       }
     }
-    public func printAllKeys()
+    public func printAllValues()
     {
       var current: Node! = self.head
       while current != nil && current.value != nil
       {
-        print(current.value!)
+        print(current.value!,terminator:" ")
         current = current.next
       }
+        print()
+    }
+    public func sort()
+    {
+        var current: Node! = self.head
+        var prev:Node! = current.next
+        ///   a   0                              b   1
+        for i in 0..<length-1
+        {
+            
+            for _ in i..<length-1
+            {
+                if prev.value! < current.value!
+                {
+                    let temp = prev.value!
+                    prev.value! = current.value!
+                    current.value! = temp
+                }
+                prev = prev.next
+            }
+            
+            current = current.next
+        }
     }
 }
