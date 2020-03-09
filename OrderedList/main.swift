@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let path = "/Users/admin/Desktop/Mytext2.txt" // Welcome to my swift programming world
+var findingWord = readLine()!
+var myValues:String!
+do {
+    let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)
+    myValues = data as String
+    print(data)
+}
+var string = (myValues)!
