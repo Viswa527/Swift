@@ -37,24 +37,23 @@ public class LinkedList<T: Equatable>
     }
     public func remove(value: T)
     {
-      //Check if the value is at the head
-      if self.head.value == value
+      
+      if self.head.value == value       //Check if the value is at the head
       {
         self.head = self.head.next!
       }
-    //Traverse the linked list to see if node is in the linked list
-    if self.head.value != nil
+    
+    if self.head.value != nil           //Traverse the linked list to see if node is in the linked list
     {
         var node = self.head
         var previousNode = Node<T>()
-        //If value found, exit the loop
-        while node.value != value && node.next != nil
+        
+        while node.value != value && node.next != nil       //If value found, exit the loop
         {
           previousNode = node
           node = node.next!
         }
-        //once found, connect the previous node to the current node's next
-        if node.value == value
+        if node.value == value                              //once found, connect the previous node to the current node's next
         {
           if node.next != nil
           {
