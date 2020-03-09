@@ -8,6 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
-print("Done")
+let path = "/Users/admin/Desktop/Mytext.txt"
+var myValues:String!
+do {
+    let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)
+    myValues = data as String
+    print(data)
+}
+var string = (myValues)!
+var array = string.split(separator: " ")
+print(array)
+
 
