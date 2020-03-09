@@ -12,15 +12,22 @@ let path = "/Users/admin/Desktop/Mytext.txt" // Welcome to my swift programming 
 var findingWord = readLine()!
 var myValues:String!
 do {
-    let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)
-    myValues = data as String
-    print(data)
+    let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)      // to read text file
+    myValues = data as String                                                         // data will be converted into String format
+    print(data)                                                                       // prints text as a string
 }
-var string = (myValues)!
-var array = Array(string.split(separator: " "))
-var list = LinkedList<String>()
+var string = (myValues)!                                                              // unwrapping the data
+var array = Array(string.split(separator: " "))                                       // spliting word by word with repective of space
+var list = LinkedList<String>()                                                        // creating object to class
 for i in array
 {
-    list.insert(value: String(i))
+    if findingWord !=  String(i)                                                        // checking the string
+    {
+        list.insert(value: String(i))                                                   // inserting into list
+    }
+    else
+    {
+        list.remove(value: findingWord)                                                // removing the the element if we found
+    }
 }
 list.printAllKeys()
