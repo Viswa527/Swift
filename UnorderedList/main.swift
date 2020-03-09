@@ -8,7 +8,8 @@
 
 import Foundation
 
-let path = "/Users/admin/Desktop/Mytext.txt"
+let path = "/Users/admin/Desktop/Mytext.txt" // Welcome to my swift programming world
+var findingWord = readLine()!
 var myValues:String!
 do {
     let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)
@@ -16,7 +17,10 @@ do {
     print(data)
 }
 var string = (myValues)!
-var array = string.split(separator: " ")
-print(array)
-
-
+var array = Array(string.split(separator: " "))
+var myList = LinkedList<String>()
+for i in array
+{
+    myList.insert(value:i)
+}
+myList.printAllKeys()
