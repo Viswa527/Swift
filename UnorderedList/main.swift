@@ -18,9 +18,9 @@ do {
 }
 var string = (myValues)!
 var array = Array(string.split(separator: " "))
-var myList = LinkedList<String>()
+var list = LinkedList<String>()
 for i in array
 {
-    myList.insert(value:i)
+    list.insert(value: String(i))
 }
-myList.printAllKeys()
+list.printAllKeys()

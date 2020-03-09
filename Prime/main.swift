@@ -9,7 +9,7 @@
 import Foundation
 
 let number = 1000
-func isPrime(_ number)->Bool
+func isPrime(_ number:Int)->Bool
 {
     if number > 3
     {
@@ -27,5 +27,3 @@ func isPrime(_ number)->Bool
         return true
     }
 }
-var array:[[Int]]
-for

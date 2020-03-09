@@ -16,7 +16,7 @@ public class Node<T: Equatable>
 public class LinkedList<T: Equatable>
 {
   var head = Node<T>()
-    public static func insert(value: T)
+    public func insert(value: T)
     {
       
       if self.head.value == nil     //find to see if empty list
@@ -35,7 +35,7 @@ public class LinkedList<T: Equatable>
         lastNode.next = newNode
       }
     }
-    public static func remove(value: T)
+    public func remove(value: T)
     {
       //Check if the value is at the head
       if self.head.value == value
@@ -67,7 +67,7 @@ public class LinkedList<T: Equatable>
         }
       }
     }
-    public static func printAllKeys()
+    public func printAllKeys()
     {
       var current: Node! = self.head
       while current != nil && current.value != nil
@@ -77,9 +77,3 @@ public class LinkedList<T: Equatable>
       }
     }
 }
-var myList = LinkedList<Int>()
-myList.insert(value:100)
-myList.insert(value:200)
-myList.insert(value:300)
-myList.insert(value:400)
-myList.printAllKeys()
