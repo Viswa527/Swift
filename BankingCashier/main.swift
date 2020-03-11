@@ -8,9 +8,9 @@
 
 import Foundation
 
-var intialCash = 100
+var intialCash = Int(readLine()!)!      //  inital cash
 var array:[Int] = [intialCash]
-ww:while intialCash > 0
+loopToEnd:while intialCash > 0
 {
     print("Press 1 to debit from your account  ")
     print("Press 2 to credit from your account   ")
@@ -21,8 +21,16 @@ ww:while intialCash > 0
     case "1":
         print("Enter amount to Debit  : ",terminator:" ")
         let amount = Int(readLine()!)!
-        intialCash = intialCash - amount
-        array.append(amount * (-1))
+        if intialCash - amount > 0
+        {
+            intialCash = intialCash - amount
+            array.append(amount * (-1))
+        }
+        else
+        {
+            print("Insufficient balance")
+            break
+        }
         // Queue.dequeue()
     case "2":
         print("Enter amount to Credit  : ",terminator:" ")
@@ -33,8 +41,8 @@ ww:while intialCash > 0
         
     default:
         print("All transcations are ended because of Invalid input")
-        break ww;
+        break loopToEnd;
     }
 }
-print(intialCash)
 print(array)
+print(intialCash)
