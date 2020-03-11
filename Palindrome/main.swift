@@ -8,17 +8,17 @@
 
 import Foundation
 var string = readLine()!
-var obj = Queues()
+var obj = Queues()                  // Createing the object of Queues
 for i in string
 {
-    obj.enque(String(i))
+    obj.enque(String(i))            // passing characters to queues
 }
 var newString:String = ""
 for _ in 0..<string.count
 {
-    newString.append(obj.deque())
+    newString.append(obj.deque())   // getting the characters from rear end
 }
-if newString.elementsEqual(string)
+if newString.elementsEqual(string)  // compareing the two strings
 {
     print("Palindrome")
 }
