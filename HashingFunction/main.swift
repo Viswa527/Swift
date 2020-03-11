@@ -12,5 +12,5 @@ var number = Int(readLine()!)!
 print("Number of slots that to create : ",terminator:" ")
 var slots = Int(readLine()!)!
 let object = HashFunction()
-let result = object.Hashfunction(number, slots)
+let result = object.Hashfunction(number, slots)     // calls the hash function 
 print(result)
