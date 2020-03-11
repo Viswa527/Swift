@@ -41,8 +41,16 @@ class Stack
 public class Balanced
 {
     let stack = Stack()
-    public func isBalancedParanthesis(_ array:[String]) -> Bool
+    public func isBalancedParanthesis(_ array1:String) -> Bool
     {
+        var array:[String] = []
+        for i in array1
+        {
+            if "[{()}]".contains(i)
+            {
+                array.append(String(i))
+            }
+        }
         for i in 0..<array.count
         {
             if "[{(".contains(array[i])
