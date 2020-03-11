@@ -15,7 +15,7 @@ class HashFunction
         for _ in 0..<number                     // loopind according to user input numbers
         {
             let input = Int(readLine()!)!
-            let index = input % slots
+            let index = input % slot
             if hashDic[index] == nil
             {
                 hashDic[index] = [input]
