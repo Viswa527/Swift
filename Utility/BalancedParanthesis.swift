@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Nodes
+class Nodes                                     // Node in Stack contains value and next
 {
     let value:String
     var next:Nodes?
@@ -16,24 +16,24 @@ class Nodes
         self.value = value
     }
 }
-class Stack
+class Stack                                     // Stack properties
 {
-    public var length:Int = 0
+    public var length:Int = 0                  // to find length it modifies whenever u use pop() and push() operations
     var top:Nodes?
-    func push(_ values:String)
+    func push(_ values:String)                  // push() operation add element to stack
     {
         let oldTop = top
         top = Nodes(value: values)
         top?.next = oldTop
         length = length + 1
     }
-    func pop(_ values:String)
+    func pop(_ values:String)                   // pop() operation delete the element
     {
         _ = top
         top = top?.next
         length = length - 1
     }
-    func peek() -> String
+    func peek() -> String                       // peek() operation show the top element in stack
     {
         return (top?.value)!
     }
@@ -41,17 +41,17 @@ class Stack
 public class Balanced
 {
     let stack = Stack()
-    public func isBalancedParanthesis(_ array1:String) -> Bool
+    public func isBalancedParanthesis(_ array1:String) -> Bool          // method to check the string has Balanced paranthesis are not..? and returns True or False
     {
         var array:[String] = []
-        for i in array1
+        for i in array1                                 // takes only(){}[] into array
         {
             if "[{()}]".contains(i)
             {
                 array.append(String(i))
             }
         }
-        for i in 0..<array.count
+        for i in 0..<array.count                        // actual procedure to checking balanced or not
         {
             if "[{(".contains(array[i])
             {
