@@ -37,7 +37,7 @@ public class LinkedList<T: Comparable> {
         length = length + 1
       }
     }
-    public func remove(value: T)
+    public func remove(value: T)        // to remove the elements in List
     {
       
       if self.head.value == value       //Check if the value is at the head
@@ -70,7 +70,7 @@ public class LinkedList<T: Comparable> {
         }
       }
     }
-    public func printAllValues()
+    public func printAllValues()                             // to print all the elements in the list
     {
       var current: Node! = self.head
       while current != nil && current.value != nil
@@ -80,7 +80,7 @@ public class LinkedList<T: Comparable> {
       }
         print()
     }
-    public func sort()
+    public func sort()                                      // sorting the List
     {
         var current: Node! = self.head
         var prev:Node! = current.next

@@ -8,26 +8,25 @@
 
 import Foundation
 
-let path = "/Users/admin/Desktop/Mytext2.txt" // Welcome to my swift programming world
-//var findingWord = readLine()!
+let path = "/Users/admin/Desktop/Mytext2.txt" // 5 6 2 3 5 1 9 8 6 4 7 0 10
 var myValues:String!
-do {
+do
+{
     let data = try NSString(contentsOfFile: path,encoding: String.Encoding.ascii.rawValue)
     myValues = data as String
-    //print(data)
 }
-var string = (myValues.split(separator: " ")).map{Int($0)!}
-//print(string)
+var string = (myValues.split(separator: " ")).map{Int($0)!}         // geting the data in the form of list by spliting by " "
+
 let list = LinkedList<Int>()
 for i in string
 {
-    list.insert(value: i)
+    list.insert(value: i)                                           // Inserting into the list
 }
 list.printAllValues()
-// list.sort()
 print(list.length)
 list.remove(value:10)
 list.printAllValues()
+list.insert(value: 27)
 print(list.length)
 list.remove(value: 99)
 print(list.length)
