@@ -30,4 +30,4 @@ for i in array
         list.remove(value: findingWord)                                                // removing the the element if we found
     }
 }
-list.printAllKeys()
+list.printAllValues()
