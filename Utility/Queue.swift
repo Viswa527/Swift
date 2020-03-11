@@ -17,35 +17,22 @@ class Nodess
     }
 }
 
-public class Queue
+public class Queues
 {
-    public var array:[Any] = []
-
-  public var isEmpty: Bool
-  {
-    return array.isEmpty
-  }
-
-  public var count: Int
-  {
-    return array.count
-  }
-
-  public func enqueue(_ element: Any)
-  {
-    array.append(element)
-  }
-
-  public func dequeue()
-  {
-    if isEmpty == false
+    public var array:[String] = []
+    public func enque(_ string:String)
     {
-      array.removeFirst()
+        array.append(string)
     }
-  }
-
-  public func front() -> Any
-  {
-    return array.first!
-  }
+    public func deque() -> String
+    {
+        let length = array.count - 1
+        if array.isEmpty == false
+        {
+            let val :String = array.last!
+            array.remove(at : length)
+            return val
+        }
+        return ""
+    }
 }
