@@ -43,6 +43,7 @@ public class LinkedList<T: Comparable> {
       if self.head.value == value       //Check if the value is at the head
       {
         self.head = self.head.next!
+        length = length - 1
       }
     
     if self.head.value != nil           //Traverse the linked list to see if node is in the linked list
@@ -83,22 +84,20 @@ public class LinkedList<T: Comparable> {
     {
         var current: Node! = self.head
         var prev:Node! = current.next
-        ///   a   0                              b   1
-        for i in 0..<length-1
+        for i in 0...length - 2
         {
-            
-            for _ in i..<length-1
+            for _ in i..<length - 1
             {
                 if prev.value! < current.value!
                 {
-                    let temp = prev.value!
-                    prev.value! = current.value!
-                    current.value! = temp
+                    let temp = current.value
+                    current.value = prev.value
+                    prev.value = temp
                 }
                 prev = prev.next
             }
-            
             current = current.next
+            prev = current.next
         }
     }
 }

@@ -24,5 +24,12 @@ for i in string
     list.insert(value: i)
 }
 list.printAllValues()
+// list.sort()
+print(list.length)
+list.remove(value:10)
+list.printAllValues()
+print(list.length)
+list.remove(value: 99)
+print(list.length)
 list.sort()
 list.printAllValues()
