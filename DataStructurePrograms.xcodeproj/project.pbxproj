@@ -10,10 +10,11 @@
 		840446B42412896400AFAB5E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840446B32412896400AFAB5E /* main.swift */; };
 		843BD34324161726007FB57F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34224161726007FB57F /* main.swift */; };
 		843BD34E24161A41007FB57F /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
-		843BD35424164872007FB57F /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
 		844F0CB0241651CF000126F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F0CAF241651CF000126F3 /* main.swift */; };
-		844F0CB42416626B000126F3 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
 		844F0CB524166270000126F3 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
+		84D8923124189D1900FF0861 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923024189D1900FF0861 /* Prime.swift */; };
+		84D8923224189DE600FF0861 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
+		84D8923324189DEF00FF0861 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923024189D1900FF0861 /* Prime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,7 @@
 		844F0CAF241651CF000126F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		844F0CB724166F84000126F3 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		844F0CB92416707E000126F3 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = utility.swift; path = Utility/utility.swift; sourceTree = "<group>"; };
+		84D8923024189D1900FF0861 /* Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				843BD34D24161A41007FB57F /* LinkedList.swift */,
+				84D8923024189D1900FF0861 /* Prime.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -285,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844F0CB42416626B000126F3 /* LinkedList.swift in Sources */,
+				84D8923224189DE600FF0861 /* LinkedList.swift in Sources */,
 				840446B42412896400AFAB5E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843BD35424164872007FB57F /* LinkedList.swift in Sources */,
+				84D8923324189DEF00FF0861 /* Prime.swift in Sources */,
 				843BD34324161726007FB57F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843BD34E24161A41007FB57F /* LinkedList.swift in Sources */,
+				84D8923124189D1900FF0861 /* Prime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

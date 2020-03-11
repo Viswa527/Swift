@@ -9,21 +9,19 @@
 import Foundation
 
 let number = 1000
-func isPrime(_ number:Int)->Bool
+var array:[[Int]] = []
+let numberOfInnerList:Int = number % 100
+for i in 1...10
 {
-    if number > 3
+    let k = (i-1) * 100
+    var newList:[Int] = []
+    for j in k...i*100
     {
-        for i in 4..<number
+        if Prime.isPrime(j)
         {
-            if number%i == 0
-            {
-                return false
-            }
+            newList.append(j)
         }
-        return true
     }
-    else
-    {
-        return true
-    }
+    array.append(newList)
 }
+print(array)

@@ -7,3 +7,24 @@
 //
 
 import Foundation
+public class Prime
+{
+    public static func isPrime(_ number:Int) ->Bool   // function to  find a prime  number or not
+    {
+        if number > 3 && number > -1    // condition
+        {
+            for iterator in 2...number-1
+            {
+                if number % iterator == 0
+                {
+                    return false
+                }
+            }
+            return true
+        }
+        else
+        {
+            return true
+        }
+    }
+}
