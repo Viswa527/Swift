@@ -33,6 +33,13 @@ class Stack                                     // Stack properties
         top = top?.next
         length = length - 1
     }
+    func pop() -> String
+    {
+        let number = (top?.value)!
+        top = top?.next
+        length = length - 1
+        return number
+    }
     func peek() -> String                       // peek() operation show the top element in stack
     {
         return (top?.value)!
