@@ -8,8 +8,8 @@
 
 import Foundation
 print("Enter the number of People")
-var numberOfPeople = Int(readLine()!)!
-class Person
+var numberOfPeople = Int(readLine()!)!              // Number person near bank
+class Person                                        // stores name and cash details of a person
 {
     public var name:String
     public var cash:Int
@@ -26,14 +26,15 @@ for i in 0..<numberOfPeople
     let names = readLine()!
     print("Enter intial cash : ",terminator:" ")
     let cashs = Int(readLine()!)!
-    dic[i] = Person(name: names, cash: cashs)
+    dic[i] = Person(name: names, cash: cashs)       // passing the values
 }
 
 let obj = Queue()
 for i in 0..<dic.count
 {
-    obj.enque((dic[i]!).name,(dic[i]!).cash)
+    obj.enque((dic[i]!).name,(dic[i]!).cash)        // adding the elements into queue
 }
-obj.printQueue()
-obj.nearCashier()
-obj.printQueue()
+obj.printQueue()                                    // printing the order of queue
+let record = obj.nearCashier()                      // all the transction records of every person
+print(record)
+obj.printQueue()                                    // shows the balance

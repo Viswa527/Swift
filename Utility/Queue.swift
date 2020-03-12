@@ -58,7 +58,7 @@ class Queue
             pro = pro.next
         }
     }
-    public func nearCashier()
+    public func nearCashier() -> [String: [Int]]
     {
         var person: Node! = self.head
         var book:[String:[Int]] = [:]
@@ -115,6 +115,7 @@ class Queue
             }
             
         }
+        return book
     }
     
 }
