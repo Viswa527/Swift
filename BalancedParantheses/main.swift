@@ -11,4 +11,3 @@ var input = readLine()!                         //  "(5+4)*{6+4}-[5-4]}"
 let obj = Balanced()
 let result = obj.isBalancedParanthesis(input)
 print(result)
-
