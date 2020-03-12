@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
-var numberOfPeople = 3
+print("Enter the number of People")
+var numberOfPeople = Int(readLine()!)!
 class Person
 {
     public var name:String
@@ -32,10 +32,8 @@ for i in 0..<numberOfPeople
 let obj = Queue()
 for i in 0..<dic.count
 {
-    obj.enque((dic[i]!).name)
+    obj.enque((dic[i]!).name,(dic[i]!).cash)
 }
 obj.printQueue()
-obj.deque()
-obj.printQueue()
-obj.deque()
+obj.nearCashier()
 obj.printQueue()
