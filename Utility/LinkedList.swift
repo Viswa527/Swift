@@ -8,12 +8,14 @@
 
 import Foundation
 
-public class Node<T: Comparable> {
+public class Node<T: Comparable>
+{
   var value: T? = nil
   var next: Node? = nil
 }
 
-public class LinkedList<T: Comparable> {
+public class LinkedList<T: Comparable>
+{
     var head = Node<T>()
     var length = 0
     public func insert(value: T)

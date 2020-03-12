@@ -8,41 +8,34 @@
 
 import Foundation
 
-var intialCash = Int(readLine()!)!      //  inital cash
-var array:[Int] = [intialCash]
-loopToEnd:while intialCash > 0
+var numberOfPeople = 3
+class Person
 {
-    print("Press 1 to debit from your account  ")
-    print("Press 2 to credit from your account   ")
-    print("Press Any key to stop all ur activities ")
-    let input = readLine()!
-    switch input
+    public var name:String
+    public var cash:Int
+    init(name:String,cash:Int)
     {
-    case "1":
-        print("Enter amount to Debit  : ",terminator:" ")
-        let amount = Int(readLine()!)!
-        if intialCash - amount > 0
-        {
-            intialCash = intialCash - amount
-            array.append(amount * (-1))
-        }
-        else
-        {
-            print("Insufficient balance")
-            break
-        }
-        // Queue.dequeue()
-    case "2":
-        print("Enter amount to Credit  : ",terminator:" ")
-        let amount = Int(readLine()!)!
-        intialCash = intialCash + amount
-        array.append(amount)
-        // Queue.enqueue(amount)
-        
-    default:
-        print("All transcations are ended because of Invalid input")
-        break loopToEnd;
+        self.name = name
+        self.cash = cash
     }
 }
-print(array)
-print(intialCash)
+var dic:[Int:Person] = [:]
+for i in 0..<numberOfPeople
+{
+    print("Enter person name : ",terminator:" ")
+    let names = readLine()!
+    print("Enter intial cash : ",terminator:" ")
+    let cashs = Int(readLine()!)!
+    dic[i] = Person(name: names, cash: cashs)
+}
+
+let obj = Queue()
+for i in 0..<dic.count
+{
+    obj.enque((dic[i]!).name)
+}
+obj.printQueue()
+obj.deque()
+obj.printQueue()
+obj.deque()
+obj.printQueue()

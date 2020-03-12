@@ -7,32 +7,55 @@
 //
 
 import Foundation
-class Nodess
+
+
+class Node
 {
-    var value:Any
-    var next:Nodess?
-    init(value:Any)
+    var value: Any?
+    var next: Node?
+    init()
+    {
+    }
+    init(value: Any)
     {
         self.value = value
     }
 }
-
-public class Queues
+class Queue
 {
-    public var array:[String] = []
-    public func enque(_ string:String)
+    var head = Node()
+    public func enque(_ value:Any)
     {
-        array.append(string)
-    }
-    public func deque() -> String
-    {
-        let length = array.count - 1
-        if array.isEmpty == false
+        if self.head.value == nil
         {
-            let val :String = array.last!
-            array.remove(at : length)
-            return val
+            self.head.value = value
+            print("\(value) head is nill")
         }
-        return ""
+        else
+        {
+            var lastNode = self.head
+            while  lastNode.next != nil
+            {
+                lastNode = lastNode.next!
+            }
+            let newNode = Node()
+            newNode.value = value
+            lastNode.next = newNode
+            print("\(value) head not nill")
+        }
     }
+    public func deque()
+    {
+        head = self.head.next!
+    }
+    public func printQueue()
+    {
+        var pro: Node! = self.head
+        while pro != nil 
+        {
+            print(pro.value!)
+            pro = pro.next
+        }
+    }
+    
 }
