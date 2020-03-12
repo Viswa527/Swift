@@ -7,16 +7,18 @@
 //
 
 import Foundation
-let number = 10
+let number = 1000
+let obj = Stack()
 for i in 0...number
 {
-    Stack().push(String(i))
+    obj.push(String(i))
 }
 for _ in 0...number
 {
-    let value = Stack().pop()
-    if Prime.isPrime(Int(value)!) && Anagram.isAnagram(Int(value)!)
+    let value = Int(obj.peek())!
+    if Prime.isPrime(value) && Anagram.isAnagram(value)
     {
         print(value)
     }
+    obj.pop()
 }

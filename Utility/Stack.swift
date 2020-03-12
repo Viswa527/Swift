@@ -27,18 +27,11 @@ class Stack                                     // Stack properties
         top?.next = oldTop
         length = length + 1
     }
-    func pop(_ values:String)                   // pop() operation delete the element
+    func pop()                   // pop() operation delete the element
     {
         _ = top
         top = top?.next
         length = length - 1
-    }
-    func pop() -> String
-    {
-        let number = (top?.value)!
-        top = top?.next
-        length = length - 1
-        return number
     }
     func peek() -> String                       // peek() operation show the top element in stack
     {
@@ -68,19 +61,19 @@ public class Balanced
             {
                 if stack.length != 0 && array[i] == ")" && stack.peek() == "("
                 {
-                    stack.pop(array[i])
+                    stack.pop()
                 }
                 else
                 {
                     if stack.length != 0 && array[i] == "}" && stack.peek() == "{"
                     {
-                        stack.pop(array[i])
+                        stack.pop()
                     }
                     else
                     {
                         if stack.length != 0 && array[i] == "]" && stack.peek() == "["
                         {
-                            stack.pop(array[i])
+                            stack.pop()
                         }
                         else
                         {
