@@ -11,14 +11,14 @@ let number = 1000
 let obj = Stack()
 for i in 0...number
 {
-    obj.push(String(i))
+    obj.push(String(i))                     // pushing all values into Stack
 }
 for _ in 0...number
 {
-    let value = Int(obj.peek())!
+    let value = Int(obj.peek())!            // getting the values by peeking
     if Prime.isPrime(value) && Anagram.isAnagram(value)
     {
         print(value)
     }
-    obj.pop()
+    obj.pop()                                   // popping out the element from the stack
 }
