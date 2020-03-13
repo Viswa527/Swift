@@ -12,6 +12,9 @@
 		843BD34E24161A41007FB57F /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
 		844F0CB0241651CF000126F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F0CAF241651CF000126F3 /* main.swift */; };
 		844F0CB524166270000126F3 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
+		84887475241B8D3900713CBB /* deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84887474241B8D3900713CBB /* deque.swift */; };
+		84887476241B920200713CBB /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923F2418BCF600FF0861 /* Stack.swift */; };
+		84887477241B920D00713CBB /* deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84887474241B8D3900713CBB /* deque.swift */; };
 		84D8923124189D1900FF0861 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923024189D1900FF0861 /* Prime.swift */; };
 		84D8923224189DE600FF0861 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BD34D24161A41007FB57F /* LinkedList.swift */; };
 		84D8923324189DEF00FF0861 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923024189D1900FF0861 /* Prime.swift */; };
@@ -22,7 +25,6 @@
 		84D8924E2418CB9500FF0861 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8924D2418CB9500FF0861 /* Queue.swift */; };
 		84D8924F2418EF1600FF0861 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8924D2418CB9500FF0861 /* Queue.swift */; };
 		84D892572418F7E600FF0861 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D892562418F7E600FF0861 /* main.swift */; };
-		84D8925B2418F81500FF0861 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8924D2418CB9500FF0861 /* Queue.swift */; };
 		84D89263241908D000FF0861 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D89262241908D000FF0861 /* main.swift */; };
 		84D8926824190CAB00FF0861 /* HashingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8926724190CAB00FF0861 /* HashingFunction.swift */; };
 		84D8926924190E6800FF0861 /* HashingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8926724190CAB00FF0861 /* HashingFunction.swift */; };
@@ -31,7 +33,6 @@
 		84D892772419126E00FF0861 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D892762419126E00FF0861 /* Anagram.swift */; };
 		84D89278241913F600FF0861 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D892762419126E00FF0861 /* Anagram.swift */; };
 		84E73E85241A21C100F72293 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E73E84241A21C100F72293 /* main.swift */; };
-		84E73E89241A227200F72293 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923F2418BCF600FF0861 /* Stack.swift */; };
 		84E73E8A241A22C800F72293 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8923024189D1900FF0861 /* Prime.swift */; };
 		84E73E8B241A22CD00F72293 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D892762419126E00FF0861 /* Anagram.swift */; };
 /* End PBXBuildFile section */
@@ -140,6 +141,7 @@
 		844F0CAF241651CF000126F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		844F0CB724166F84000126F3 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		844F0CB92416707E000126F3 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = utility.swift; path = Utility/utility.swift; sourceTree = "<group>"; };
+		84887474241B8D3900713CBB /* deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deque.swift; sourceTree = "<group>"; };
 		84D8923024189D1900FF0861 /* Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 		84D892382418BA9C00FF0861 /* BalancedParantheses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BalancedParantheses; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D8923A2418BA9C00FF0861 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				84D8926724190CAB00FF0861 /* HashingFunction.swift */,
 				84D892762419126E00FF0861 /* Anagram.swift */,
 				84D8923F2418BCF600FF0861 /* Stack.swift */,
+				84887474241B8D3900713CBB /* deque.swift */,
 				84D8924D2418CB9500FF0861 /* Queue.swift */,
 				84D8923024189D1900FF0861 /* Prime.swift */,
 			);
@@ -629,6 +632,7 @@
 			files = (
 				84D892402418BCF600FF0861 /* Stack.swift in Sources */,
 				843BD34E24161A41007FB57F /* LinkedList.swift in Sources */,
+				84887475241B8D3900713CBB /* deque.swift in Sources */,
 				84D8923124189D1900FF0861 /* Prime.swift in Sources */,
 				84D892772419126E00FF0861 /* Anagram.swift in Sources */,
 				84D8924E2418CB9500FF0861 /* Queue.swift in Sources */,
@@ -667,7 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D8925B2418F81500FF0861 /* Queue.swift in Sources */,
+				84887477241B920D00713CBB /* deque.swift in Sources */,
 				84D892572418F7E600FF0861 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,9 +699,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84887476241B920200713CBB /* Stack.swift in Sources */,
 				84E73E8B241A22CD00F72293 /* Anagram.swift in Sources */,
 				84E73E8A241A22C800F72293 /* Prime.swift in Sources */,
-				84E73E89241A227200F72293 /* Stack.swift in Sources */,
 				84E73E85241A21C100F72293 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

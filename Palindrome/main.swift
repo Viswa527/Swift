@@ -8,15 +8,15 @@
 
 import Foundation
 var string = readLine()!
-var obj = Queues()                  // Createing the object of Queues
+var obj = Deque()                  // Createing the object of Queues
 for i in string
 {
-    obj.enque(String(i))            // passing characters to queues
+    obj.addRear(String(i))            // passing characters to queues
 }
 var newString:String = ""
 for _ in 0..<string.count
 {
-    newString.append(obj.deque())   // getting the characters from rear end
+    newString.append(String(obj.removeRear()))   // getting the characters from rear end
 }
 if newString.elementsEqual(string)  // compareing the two strings
 {

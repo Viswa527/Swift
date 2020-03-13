@@ -9,11 +9,11 @@
 import Foundation
 
 
-class Node
+class Nod
 {
     var name: String?
     var cash: Int?
-    var next: Node?
+    var next: Nod?
     init()
     {
     }
@@ -24,7 +24,25 @@ class Node
 }
 class Queue
 {
-    var head = Node()
+    var head = Nod()
+    public func enque(_ name:String)
+    {
+        if self.head.name == nil
+        {
+            self.head.name = name
+        }
+        else
+        {
+            var lastNode = self.head
+            while  lastNode.next != nil
+            {
+                lastNode = lastNode.next!
+            }
+            let newNode = Nod()
+            newNode.name = name
+            lastNode.next = newNode
+        }
+    }
     public func enque(_ name:String,_ cash:Int)
     {
         if self.head.name == nil
@@ -39,11 +57,17 @@ class Queue
             {
                 lastNode = lastNode.next!
             }
-            let newNode = Node()
+            let newNode = Nod()
             newNode.name = name
             newNode.cash = cash
             lastNode.next = newNode
         }
+    }
+    public func deques() -> String
+    {
+        let value = head.name!
+        head = self.head.next!
+        return value
     }
     public func deque()
     {
@@ -51,16 +75,17 @@ class Queue
     }
     public func printQueue()
     {
-        var pro: Node! = self.head
+        var pro: Nod! = self.head
         while pro != nil 
         {
             print("\(pro.name!) ---(Cash Left)-->\(pro.cash!)")
             pro = pro.next
         }
     }
+    
     public func nearCashier() -> [String: [Int]]
     {
-        var person: Node! = self.head
+        var person: Nod! = self.head
         var book:[String:[Int]] = [:]
         while person != nil
         {
