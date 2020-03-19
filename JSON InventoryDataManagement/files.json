@@ -1,0 +1,8 @@
+{
+    "Rice": {"Name":"Basmathi","AvailablityOfWeight":10,"PricePerKg":20},
+    
+    "Pulse": {"Name":"Redgram","AvailablityOfWeight":20,"PricePerKg":40},
+    
+    "Wheats": {"Name":"whitewheat","AvailablityOfWeight":30,"PricePerKg":12}
+}
+
