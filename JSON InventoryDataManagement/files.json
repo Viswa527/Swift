@@ -3,6 +3,6 @@
     
     "Pulse": {"Name":"Redgram","AvailablityOfWeight":20,"PricePerKg":40},
     
-    "Wheats": {"Name":"whitewheat","AvailablityOfWeight":30,"PricePerKg":12}
+    "Wheats": {"Name":"Whitewheat","AvailablityOfWeight":30,"PricePerKg":12}
 }
 
